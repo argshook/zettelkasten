@@ -4,7 +4,6 @@ title: Hello, World
 
 Welcome to my digital garden.
 
-
 ## List
 1. One
 2. Two

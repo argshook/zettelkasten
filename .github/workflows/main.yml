@@ -1,0 +1,14 @@
+name: Build
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Trigger Build
+        run: curl ${{ secrets.TRIGGER_BUILD }}

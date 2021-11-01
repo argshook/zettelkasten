@@ -10,3 +10,5 @@ reach me out on twitter
 poke at my code on <a href="https://github.com/argshook" target="_blank" rel="noopener">github</a>
 
 Thanks for hanging out!
+
+link to [projects.md](./projects.md)
