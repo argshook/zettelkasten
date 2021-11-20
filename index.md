@@ -13,7 +13,7 @@ Welcome to my digital garden.
 
 ## Todo
 
-* [ ] Make a script that generates sitemap from file hierarcy
+* [ ] generate sitemap from file hierarcy
 
 ```js
 const ipa = 'ted'
