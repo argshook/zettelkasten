@@ -14,8 +14,6 @@ Welcome to my digital garden.
 ## Todo
 
 * [ ] Make a script that generates sitemap from file hierarcy
-* [ ] make a script that on each file save would deploy a new version of the site online
-* [ ] extract create date and modify date for a file from git
 
 ```js
 const ipa = 'ted'
