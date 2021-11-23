@@ -1,5 +1,6 @@
 ---
 title: What is this?
+date-modified: 2021-11-21
 ---
 
 When working with a computor, I really enjoy taking a lot of notes. Over time I streamlined the note taking process pretty well, to the point where taking notes is very straighforward.
