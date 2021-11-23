@@ -2,7 +2,6 @@
 title: About
 date-modified: 2021-11-21
 ---
-jasdf
 
 Hello and welcome to my digital garden.
 
