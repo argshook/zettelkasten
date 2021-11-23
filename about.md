@@ -1,6 +1,6 @@
 ---
 title: About
-date-modified: wtf
+date-modified: 2021-11-23
 ---
 
 Hello and welcome to my digital garden.
