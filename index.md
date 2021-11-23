@@ -1,6 +1,5 @@
 ---
 title: Hello, World
-date-modified: 2021-11-23
 ---
 
 Welcome to my digital garden!
