@@ -21,4 +21,4 @@ But it's a living thing - a digital garden - where any note can be changed or re
 
 This is not a blog, there are no posts or a timeline. Just a collection of notes and links between them.
 
-All of them are available on github, you're very welcome to contribute! [https://github.com/argshook/zettelkasten]([https://github.com/argshook/zettelkasten])
+All of them are available on github, you're very welcome to contribute! [https://github.com/argshook/zettelkasten](https://github.com/argshook/zettelkasten)
