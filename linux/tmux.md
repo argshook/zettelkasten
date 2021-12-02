@@ -3,8 +3,6 @@ title: Tmux
 date-modified: 2021-11-29
 ---
 
-To kill the current session hit subsequently `Enter` + `~` + `.`
-
 To choose which session to detach use `prefix` + `D` (uppercase D)
 
 ```
