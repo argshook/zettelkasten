@@ -1,6 +1,6 @@
 ---
 title: Tmux
-date-modified: 2021-11-29
+date-modified: 2021-12-02
 ---
 
 To choose which session to detach use `prefix` + `D` (uppercase D)
