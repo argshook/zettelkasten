@@ -5,6 +5,8 @@ date-modified: 2021-11-23
 
 Hello and welcome to my digital garden.
 
+Yoyo
+
 This page is an unordered archive of notes, updated whenever I see fit.\
 It is not a blog and some notes might not even be finished.
 
