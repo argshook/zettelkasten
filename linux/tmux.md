@@ -3,23 +3,43 @@ title: Tmux
 date-modified: 2021-12-02
 ---
 
-To choose which session to detach use `prefix` + `D` (uppercase D)
+Below `prefix` is mentioned multiple times. By default it is `<C-b>` which is `ctrl` + `b`.
+
+It can be remapped to other key, i like to use `ctrl` + `a`:
 
 ```
-# list all key bindings
+set -g prefix C-a
+```
+
+## choose which session to detach with `prefix` + `D` (uppercase D)
+
+## list all key bindings
+
+```
 tmux list-keys
-
-# or within tmux
-:list-keys
-
-# or within tmux
-?
 ```
 
-kill window `Prefix` + `&`
-kill pane `prefix` + `x`
+or within tmux
 
-change color of one pane
+```
+:list-keys
+```
+
+or
+
+```
+`prefix` + `?`
+```
+
+## kill window
+
+`prefix` + `&`
+
+## kill pane
+
+`prefix` + `x`
+
+## change color of one pane
 
 ```
 select-pane -t:.1 -P 'fg=red,bg=white'
@@ -27,9 +47,9 @@ select-pane -t:.1 -P 'fg=red,bg=white'
 
 # split (extract) current pane into new window
 
-`prefix !`, so `c-a !` :)
+`prefix` + `!`
 
-# move pane to whereverr
+# move pane to wherever
 
 1. go to pane you want to move
 2. mark it with `prefix + m`
