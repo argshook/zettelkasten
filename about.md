@@ -8,6 +8,7 @@ Hello and welcome to my digital garden.
 This page is an unordered archive of notes, updated whenever I see fit.\
 It is not a blog and some notes might not even be finished.
 
+Yoyo 
 Just like a real life garden, there are nice, groomed areas, but there also are some unattended corners, waiting to be improved.
 
 All notes are markdown files and their source can be found on [github](https://github.com/argshook/zettelkasten). I'm happy to accept PRs with additions or fixes!
