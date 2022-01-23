@@ -51,14 +51,14 @@ select-pane -t:.1 -P 'fg=red,bg=white'
 
 `prefix` + `!`
 
-# move pane to wherever
+# Move pane to somewhere else
 
 1. go to pane you want to move
 2. mark it with `prefix + m`
 3. go to destination window/session
 4. `:join-pane`
 
-# disable status bar
+# Disable status bar
 
 ctrl+a
 set -g status off
