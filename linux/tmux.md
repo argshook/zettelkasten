@@ -13,7 +13,7 @@ set -g prefix C-a
 
 ## Detach from specific session
 
-You can choose which session to detach with `prefix` + `D` (uppercase D)
+You can choose which session to detach with `prefix` + `D` (uppercase `D`)
 
 ## list all key bindings
 
