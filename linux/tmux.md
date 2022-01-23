@@ -47,7 +47,7 @@ or
 select-pane -t:.1 -P 'fg=red,bg=white'
 ```
 
-# split (extract) current pane into new window
+# Extract current pane into new window
 
 `prefix` + `!`
 
