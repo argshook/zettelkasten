@@ -15,7 +15,7 @@ set -g prefix C-a
 
 You can choose which session to detach with `prefix` + `D` (uppercase `D`)
 
-## list all key bindings
+## List all key bindings
 
 ```
 tmux list-keys
@@ -33,15 +33,15 @@ or
 `prefix` + `?`
 ```
 
-## kill window
+## Kill window
 
 `prefix` + `&`
 
-## kill pane
+## Kill pane
 
 `prefix` + `x`
 
-## change color of one pane
+## Change color of one pane
 
 ```
 select-pane -t:.1 -P 'fg=red,bg=white'
