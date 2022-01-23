@@ -11,7 +11,7 @@
   --color-secondary-accent: #920de90b;
   --color-shadow: #f4f4f4;
   --color-table: #118bee;
-  --color-text: #000;
+  --color-text: #fff;
   --color-text-secondary: #999;
   --font-family: Verdana, sans-serif;
   --hover-brightness: 1.2;
@@ -131,7 +131,6 @@ main {
 }
 
 pre {
-  font-size: 0.9em;
   white-space: pre-line;
 }
 
@@ -149,19 +148,6 @@ figure img {
 
 figure figcaption {
   font-size: .8em;
-}
-
-pre {
-  padding: 1em 0;
-}
-
-h1 {
-  font-weight: 500;
-}
-
-h2 {
-  padding: 1.5em 0 .5em;
-  font-weight: 500;
 }
 
 /* Layout */
@@ -217,12 +203,14 @@ section header {
 }
 
 /* Typography */
-code,
-samp {
+code
+{
   background-color: var(--color-accent);
   border-radius: var(--border-radius);
   color: var(--color-text);
   display: inline-block;
+  font-size: 0.9em;
+  font-family: monospace;
   margin: 0 0.1rem;
   padding: 0 0.5rem;
 }
@@ -242,11 +230,14 @@ h3,
 h4,
 h5,
 h6 {
+  margin: 2em 0 1em 0;
+  padding: 0;
   line-height: var(--line-height);
+  font-weight: 500;
 }
 
-mark {
-  padding: 0.1rem;
+h2 {
+  margin-top: 3em;
 }
 
 ol li,
@@ -259,14 +250,9 @@ p {
   padding: 0;
 }
 
-pre {
-  margin: 1rem 0;
-  padding: 1rem 0;
-}
-
 pre code {
   display: block;
-  padding: 0.5rem 2rem;
+  padding: 0.5rem 1rem;
   white-space: pre-wrap;
 }
 

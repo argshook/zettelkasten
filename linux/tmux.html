@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-    <title>arij.us – Tmux</title>
+    <title>arij.us - tmux</title>
     <link rel="stylesheet" href="https://arij.us/statics/style.css" />
   </head>
   <body>
@@ -26,33 +26,33 @@
       <article class="article">
         <h1 class="article-title">Tmux</h1>
                 <div class="last-modified">Last updated 2021-12-02</div>
-                <p>Below <code>prefix</code> is mentioned multiple times. By default it is <code>&lt;C-b&gt;</code> which is <code>ctrl</code> + <code>b</code>.</p>
-                <p>It can be remapped to other key, i like to use <code>ctrl</code> + <code>a</code>:</p>
-                <pre><code>set -g prefix C-a</code></pre>
-                <h2 id="choose-which-session-to-detach-with-prefix-d-uppercase-d">choose which session to detach with <code>prefix</code> + <code>D</code> (uppercase D)</h2>
-                <h2 id="list-all-key-bindings">list all key bindings</h2>
-                <pre><code>tmux list-keys</code></pre>
-                <p>or within tmux</p>
-                <pre><code>:list-keys</code></pre>
-                <p>or</p>
-                <pre><code>`prefix` + `?`</code></pre>
-                <h2 id="kill-window">kill window</h2>
-                <p><code>prefix</code> + <code>&amp;</code></p>
-                <h2 id="kill-pane">kill pane</h2>
-                <p><code>prefix</code> + <code>x</code></p>
-                <h2 id="change-color-of-one-pane">change color of one pane</h2>
-                <pre><code>select-pane -t:.1 -P &#39;fg=red,bg=white&#39;</code></pre>
-                <h1 id="split-extract-current-pane-into-new-window">split (extract) current pane into new window</h1>
-                <p><code>prefix</code> + <code>!</code></p>
-                <h1 id="move-pane-to-wherever">move pane to wherever</h1>
-                <ol type="1">
-                <li>go to pane you want to move</li>
-                <li>mark it with <code>prefix + m</code></li>
-                <li>go to destination window/session</li>
-                <li><code>:join-pane</code></li>
-                </ol>
-                <h1 id="disable-status-bar">disable status bar</h1>
-                <p>ctrl+a set -g status off</p>
+        <p>Below <code>prefix</code> is mentioned multiple times. By default it is <code>&lt;C-b&gt;</code> which is <code>ctrl</code> + <code>b</code>.</p>
+<p>It can be remapped to other key, i like to use <code>ctrl</code> + <code>a</code>:</p>
+<pre><code>set -g prefix C-a</code></pre>
+<h2 id="choose-which-session-to-detach-with-prefix-d-uppercase-d">choose which session to detach with <code>prefix</code> + <code>D</code> (uppercase D)</h2>
+<h2 id="list-all-key-bindings">list all key bindings</h2>
+<pre><code>tmux list-keys</code></pre>
+<p>or within tmux</p>
+<pre><code>:list-keys</code></pre>
+<p>or</p>
+<pre><code>`prefix` + `?`</code></pre>
+<h2 id="kill-window">kill window</h2>
+<p><code>prefix</code> + <code>&amp;</code></p>
+<h2 id="kill-pane">kill pane</h2>
+<p><code>prefix</code> + <code>x</code></p>
+<h2 id="change-color-of-one-pane">change color of one pane</h2>
+<pre><code>select-pane -t:.1 -P &#39;fg=red,bg=white&#39;</code></pre>
+<h1 id="split-extract-current-pane-into-new-window">split (extract) current pane into new window</h1>
+<p><code>prefix</code> + <code>!</code></p>
+<h1 id="move-pane-to-wherever">move pane to wherever</h1>
+<ol type="1">
+<li>go to pane you want to move</li>
+<li>mark it with <code>prefix + m</code></li>
+<li>go to destination window/session</li>
+<li><code>:join-pane</code></li>
+</ol>
+<h1 id="disable-status-bar">disable status bar</h1>
+<p>ctrl+a set -g status off</p>
       </article>
     </main>
   </body>
