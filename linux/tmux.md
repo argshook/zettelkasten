@@ -11,7 +11,9 @@ It can be remapped to other key, i like to use `ctrl` + `a`:
 set -g prefix C-a
 ```
 
-## choose which session to detach with `prefix` + `D` (uppercase D)
+## Detach from specific session
+
+You can choose which session to detach with `prefix` + `D` (uppercase D)
 
 ## list all key bindings
 
@@ -68,8 +70,3 @@ no spaces
   two spaces
 no spaces
 ```
-
-### 3rd level
-#### 4rd level
-##### 5rd level
-###### 6rd level
