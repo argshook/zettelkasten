@@ -62,11 +62,3 @@ select-pane -t:.1 -P 'fg=red,bg=white'
 
 ctrl+a
 set -g status off
-
-```javascript
-no spaces
-  two spaces
-    four spaces
-  two spaces
-no spaces
-```
