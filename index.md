@@ -11,15 +11,5 @@ This is currently a messy-experiment :)
 * [what-is-this.md](what-is-this.md)
 * [index.md](index.md)
 * [projects.md](projects.md)
-
-
-.
-|-- about.md
-|-- CNAME
-|-- index.md
-|-- linux
-|   `-- tmux.md
-|-- projects.md
-`-- what-is-this.md
-
-1 directory, 6 files
+* [linux](./linux/tmux.html)
+    + [tmux](./linux/tmux.html)
