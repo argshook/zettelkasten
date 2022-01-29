@@ -9,7 +9,6 @@ This is currently a messy-experiment :)
 
 * [about](about.md)
 * [what-is-this](what-is-this.md)
-* [index](index.md)
 * [projects](projects.md)
 * [linux](./linux/index.html)
     + [tmux](./linux/tmux.html)
