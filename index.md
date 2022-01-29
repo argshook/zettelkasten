@@ -13,3 +13,13 @@ This is currently a messy-experiment :)
 * [projects.md](projects.md)
 
 
+.
+|-- about.md
+|-- CNAME
+|-- index.md
+|-- linux
+|   `-- tmux.md
+|-- projects.md
+`-- what-is-this.md
+
+1 directory, 6 files
