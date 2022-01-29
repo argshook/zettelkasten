@@ -7,9 +7,9 @@ Welcome to my digital garden!
 
 This is currently a messy-experiment :) 
 
-* [about.md](about.md)
-* [what-is-this.md](what-is-this.md)
-* [index.md](index.md)
-* [projects.md](projects.md)
+* [about](about.md)
+* [what-is-this](what-is-this.md)
+* [index](index.md)
+* [projects](projects.md)
 * [linux](./linux/index.html)
     + [tmux](./linux/tmux.html)
