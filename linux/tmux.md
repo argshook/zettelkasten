@@ -62,3 +62,4 @@ ctrl+a
 set -g status off
 
 Test
+Test2
