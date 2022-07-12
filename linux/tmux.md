@@ -62,3 +62,7 @@ select-pane -t:.1 -P 'fg=red,bg=white'
 
 ctrl+a
 set -g status off
+
+---
+
+
