@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+    <title>arij.us - linux/docker</title>
+    <link rel="stylesheet" href="https://arij.us/statics/style.css" />
+  </head>
+  <body>
+    <main>
+      <header class="header">
+        <a class="header-title" href="https://arij.us">
+          <div class="page-title">arij.us</div>
+          <div class="page-subtitle">Digital Garden</div>
+        </a>
+
+        <nav class="menu">
+          <ul>
+            <li><a href="https://arij.us">Home</a></li>
+            <li><a href="https://arij.us/about.html">About</a></li>
+            <li><a href="https://arij.us/projects.html">Projects</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <article class="article">
+        <h1 class="article-title">Docker</h1>
+                <div class="last-modified">Last updated 2022-07-12</div>
+        <p>Remove all docker containers and images. For when you need a cleanup</p>
+<pre class="shell"><code>docker rm $(docker ps -aq) &amp;&amp; docker rmi $(docker images -q)</code></pre>
+      </article>
+    </main>
+  </body>
+</html>
