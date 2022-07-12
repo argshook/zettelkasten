@@ -29,29 +29,30 @@
         <p>Below <code>prefix</code> is mentioned multiple times. By default it is <code>&lt;C-b&gt;</code> which is <code>ctrl</code> + <code>b</code>.</p>
 <p>It can be remapped to other key, i like to use <code>ctrl</code> + <code>a</code>:</p>
 <pre><code>set -g prefix C-a</code></pre>
-<h2 id="choose-which-session-to-detach-with-prefix-d-uppercase-d">choose which session to detach with <code>prefix</code> + <code>D</code> (uppercase D)</h2>
-<h2 id="list-all-key-bindings">list all key bindings</h2>
+<h2 id="detach-from-specific-session">Detach from specific session</h2>
+<p>You can choose which session to detach with <code>prefix</code> + <code>D</code> (uppercase <code>D</code>)</p>
+<h2 id="list-all-key-bindings">List all key bindings</h2>
 <pre><code>tmux list-keys</code></pre>
 <p>or within tmux</p>
 <pre><code>:list-keys</code></pre>
 <p>or</p>
 <pre><code>`prefix` + `?`</code></pre>
-<h2 id="kill-window">kill window</h2>
+<h2 id="kill-window">Kill window</h2>
 <p><code>prefix</code> + <code>&amp;</code></p>
-<h2 id="kill-pane">kill pane</h2>
+<h2 id="kill-pane">Kill pane</h2>
 <p><code>prefix</code> + <code>x</code></p>
-<h2 id="change-color-of-one-pane">change color of one pane</h2>
+<h2 id="change-color-of-one-pane">Change color of one pane</h2>
 <pre><code>select-pane -t:.1 -P &#39;fg=red,bg=white&#39;</code></pre>
-<h1 id="split-extract-current-pane-into-new-window">split (extract) current pane into new window</h1>
+<h1 id="extract-current-pane-into-new-window">Extract current pane into new window</h1>
 <p><code>prefix</code> + <code>!</code></p>
-<h1 id="move-pane-to-wherever">move pane to wherever</h1>
+<h1 id="move-pane-to-somewhere-else">Move pane to somewhere else</h1>
 <ol type="1">
 <li>go to pane you want to move</li>
 <li>mark it with <code>prefix + m</code></li>
 <li>go to destination window/session</li>
 <li><code>:join-pane</code></li>
 </ol>
-<h1 id="disable-status-bar">disable status bar</h1>
+<h1 id="disable-status-bar">Disable status bar</h1>
 <p>ctrl+a set -g status off</p>
       </article>
     </main>
