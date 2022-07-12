@@ -1,6 +1,6 @@
 ---
 title: Tmux
-date-modified: 2022-03-18
+date-modified: 2022-07-12
 ---
 
 Below `prefix` is mentioned multiple times. By default it is `<C-b>` which is `ctrl` + `b`.
