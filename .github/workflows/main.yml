@@ -11,4 +11,4 @@ jobs:
 
     steps:
       - name: Trigger Build
-        run: curl ${{ secrets.TRIGGER_BUILD }}
+        run: ${{ secrets.TRIGGER_BUILD }}
