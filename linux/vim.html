@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+    <title>arij.us - linux/vim</title>
+    <link rel="stylesheet" href="https://arij.us/statics/style.css" />
+  </head>
+  <body>
+    <main>
+      <header class="header">
+        <a class="header-title" href="https://arij.us">
+          <div class="page-title">arij.us</div>
+          <div class="page-subtitle">Digital Garden</div>
+        </a>
+
+        <nav class="menu">
+          <ul>
+            <li><a href="https://arij.us">Home</a></li>
+            <li><a href="https://arij.us/about.html">About</a></li>
+            <li><a href="https://arij.us/projects.html">Projects</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <article class="article">
+        <h1 class="article-title">Vim</h1>
+                <div class="last-modified">Last updated 2022-07-12</div>
+        <h1 id="move-lines-matching-pattern-to-the-bottom-of-file">Move lines matching pattern to the bottom of file</h1>
+<pre><code>:g/[pattern]/m $</code></pre>
+<h2 id="example">Example</h2>
+<p>I had a bash file with repeated patterns of:</p>
+<pre><code>_some_function () {
+...
+}
+alias some_function=_some_function</code></pre>
+<p>Wanted to detach function declaration and alias:</p>
+<pre><code>:g/^alias/m $</code></pre>
+<p>Function declarations remain untouched, while all aliases went down to bottom of file.</p>
+<p>The <code>:g[lobal]</code> command is neat</p>
+<p><a href="https://vimhelp.org/repeat.txt.html#%3Aglobal"><code>:help :global</code></a></p>
+      </article>
+    </main>
+  </body>
+</html>
