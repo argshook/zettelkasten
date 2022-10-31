@@ -12,5 +12,6 @@ This is a messy-experiment.
 * [projects](projects.md)
 * [linux](./linux/index.md)
     + [docker](./linux/docker.md)
+    + [swap](./linux/swap.md)
     + [tmux](./linux/tmux.md)
     + [vim](./linux/vim.md)
