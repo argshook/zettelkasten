@@ -5,7 +5,7 @@ date-modified: 2022-10-18
 
 ## Advanced filtering
 
-For more advanced filtering, pipe `git log` output to `tig`:
+Just, pipe `git log` right into `tig`, for example:
 
 ```
 git log --author="Name Surname" | tig
