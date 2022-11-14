@@ -3,6 +3,8 @@ title: Tig
 date-modified: 2022-10-18
 ---
 
+## Advanced filtering
+
 For more advanced filtering, pipe `git log` output to `tig`:
 
 ```
