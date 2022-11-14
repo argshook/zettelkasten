@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-    <title>arij.us</title>
+    <title>arij.us - linux/tig</title>
     <link rel="stylesheet" href="https://arij.us/statics/style.css" />
   </head>
   <body>
@@ -24,23 +24,13 @@
       </header>
 
       <article class="article">
-        <h1 class="article-title">Hello, World</h1>
+        <h1 class="article-title">Tig</h1>
                 <div class="last-modified">Last updated 2022-11-14</div>
-        <p>Welcome to my digital garden!</p>
-<p>This is a messy-experiment.</p>
-<ul>
-<li><a href="about.html">about</a></li>
-<li><a href="what-is-this.html">what-is-this</a></li>
-<li><a href="projects.html">projects</a></li>
-<li><a href="./linux/index.html">linux</a>
-<ul>
-<li><a href="./linux/docker.html">docker</a></li>
-<li><a href="./linux/swap.html">swap</a></li>
-<li><a href="./linux/tig.html">tig</a></li>
-<li><a href="./linux/tmux.html">tmux</a></li>
-<li><a href="./linux/vim.html">vim</a></li>
-</ul></li>
-</ul>
+        <h2 id="advanced-filtering">Advanced filtering</h2>
+<p>Just, pipe <code>git log</code> right into <code>tig</code>, for example:</p>
+<pre><code>git log --author=&quot;Name Surname&quot; | tig</code></pre>
+<h2 id="view-revisions-of-file">View revisions of file</h2>
+<p>Use <code>blame</code> * <code>vt</code> to open tree view of commit * navigate to file with hjkl and enter * <code>b</code> to open <code>blame</code> view * <code>b</code> again to step backwards of a given line * <code>,</code> to step backwards to the parent commit of a given line * <code>&lt;</code> to return to where you were previously</p>
       </article>
     </main>
   </body>
