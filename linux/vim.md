@@ -31,3 +31,9 @@ Function declarations remain untouched, while all aliases went down to bottom of
 The `:g[lobal]` command is neat
 
 [`:help :global`](https://vimhelp.org/repeat.txt.html#%3Aglobal)
+
+## Reverse order of lines
+
+```
+:g/^/m0
+```
