@@ -7,12 +7,12 @@ Welcome to my digital garden!
 
 This is a messy-experiment.
 
-* [about](about.md)
-* [what-is-this](what-is-this.md)
-* [projects](projects.md)
+* [about](about.html)
+* [what-is-this](what-is-this.html)
+* [projects](projects.html)
 * [linux](./linux/index.html)
     + [docker](./linux/docker.html)
-    + [swap](./linux/swap.md)
+    + [swap](./linux/swap.html)
     + [tig](./linux/tig.html)
     + [tmux](./linux/tmux.html)
     + [vim](./linux/vim.html)
