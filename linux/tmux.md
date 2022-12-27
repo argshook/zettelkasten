@@ -47,22 +47,33 @@ or
 select-pane -t:.1 -P 'fg=red,bg=white'
 ```
 
-# Extract current pane into new window
+## Extract current pane into new window
 
 `prefix` + `!`
 
-# Move pane to somewhere else
+## Move pane to somewhere else
 
 1. go to pane you want to move
 2. mark it with `prefix + m`
 3. go to destination window/session
 4. `:join-pane`
 
-# Disable status bar
+## Disable status bar
 
 ctrl+a
 set -g status off
 
----
+## split programatically
 
+```
+tmux split-window "echo hey"
+```
 
+This will work but close immediatelly after `echo`
+
+To keep it open:
+
+```
+tmux set-option remain-on-exit on
+tmux split-window "echo hey"
+```
