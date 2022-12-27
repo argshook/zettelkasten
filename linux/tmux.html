@@ -53,7 +53,10 @@
 <li><code>:join-pane</code></li>
 </ol>
 <h2 id="disable-status-bar">Disable status bar</h2>
-<p>ctrl+a set -g status off</p>
+<ol type="1">
+<li>Open command prompt with <kbd>prefix</kbd>+<kbd>:</kbd> (in my case prefix is <kbd>ctrl</kbd>+<kbd>a</kbd>, so full command is <kbd>ctrl</kbd>+<kbd>a</kbd>+<kbd>:</kbd>)</li>
+<li><code>set -g status off</code></li>
+</ol>
 <h2 id="split-programatically">split programatically</h2>
 <pre><code>tmux split-window &quot;echo hey&quot;</code></pre>
 <p>This will work but close immediatelly after <code>echo</code></p>
