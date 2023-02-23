@@ -16,3 +16,4 @@ This is a messy-experiment.
     + [tig](./linux/tig.html)
     + [tmux](./linux/tmux.html)
     + [vim](./linux/vim.html)
+* [Sync vs Async work comparison](./sync-vs-async.html)
