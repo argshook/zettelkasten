@@ -22,4 +22,4 @@ Use `blame`:
 - `,` to step backwards to the parent commit of a given line
 - `<` to return to where you were previously
 
-T
+U
