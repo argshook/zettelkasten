@@ -37,3 +37,5 @@ The `:g[lobal]` command is neat
 ```
 :g/^/m0
 ```
+
+T
