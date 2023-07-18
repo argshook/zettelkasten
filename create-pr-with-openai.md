@@ -19,20 +19,21 @@ my script does not clash with some other command.
 
 ## Script Overview
 
-If you're looking for code, find the complete script [here in my dotfiles repo](https://github.com/argshook/dotfiles/blob/master/.argsdotfiles/bin/%2Cpr-create).
-The script is quite straightforward and easy to copy and use. If you would like
-to use it, make sure `openai` and `yaspin` python modules are installed. This
-can be done with a quick `pip install openai yaspin`
+The complete script is [here in my dotfiles](https://github.com/argshook/dotfiles/blob/master/.argsdotfiles/bin/%2Cpr-create).
 
-`yaspin` is just for a spinner to indicate progress, just because I wanted a
-few sparks in my terminal. Feel free to adjust to fit your use case!
+It's quite straightforward and easy to copy and use. Make sure `openai` and
+`yaspin` python modules are installed. This can be done with a quick `pip
+install openai yaspin`
 
-My script does three things:
+`yaspin` is just for a spinner to indicate progress. Just because I wanted a
+few sparks in my terminal. Adjust to fit your use case!
+
+My script does 3 things:
 
 1. Extracts the git log.
 1. Summarizes the changes into a clear, concise title and description using
    OpenAI's `gpt-3.5-turbo` model.
-1. Pushes a PR to GitHub using the generated title and description.
+1. Pushes a PR to GitHub using [`gh cli`](https://cli.github.com/) the generated title and description.
 
 ### Extracting the Git Log
 
