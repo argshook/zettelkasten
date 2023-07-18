@@ -1,6 +1,6 @@
 ---
 title: Turbocharging GitHub PR Creation with Python, OpenAI, and GitHub CLI
-date-modified: 2023-04-05
+date-modified: 2023-07-18
 ---
 
 Creating, reviewing, and merging pull requests (PRs) is an integral part of
