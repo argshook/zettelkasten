@@ -3,28 +3,19 @@ title: Turbocharging GitHub PR Creation with Python, OpenAI, and GitHub CLI
 date-modified: 2023-07-18
 ---
 
-Creating, reviewing, and merging pull requests (PRs) is an integral part of
-collaborative software development. These PRs, crafted for human understanding,
-should be easy to read and comprehend.
-
 Developers who push numerous PRs daily can understand the taxing effort it
 takes to consistently pull-off comprehensive titles and descriptions. After
 writing great commit messages there should be no need to again write the PR
-description (essentially the same thing in a slightly different format).
+description - it's essentially the same thing in a different format.
 
-Wouldn't it be nice to automate these repetitive tasks without sacrificing
-clarity and consistency?
+I decided to automate the process of creating PRs. Not only pushing code with
+`gh pr create`, but also generating values for title and description.
 
-Facing this problem far too often I decided to automate the process of creating
-PRs. And not only just pushing code with `gh pr create`, but also generating
-values for title and description.
-
-Using python as a glue to combine Git, GitHub CLI (`gh`), and OpenAI's API, I
+Using `python` as a glue to combine Git, GitHub CLI (`gh`), and OpenAI's API, I
 ended up with a simple script.
 
-I chose to put it as `,pr-create` command. Now this command is always available
-in my terminal session and the comma (`,`) at the start makes sure it will
-never clash with any other command. Neat!
+I chose to put it as `,pr-create` command. The comma (`,`) is just to make sure
+my script does not clash with some other command.
 
 ## Script Overview
 
