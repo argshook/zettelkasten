@@ -61,9 +61,8 @@ output = subprocess.check_output(
 )
 ```
 
-This command retrieves the git log from the base commit to the current `HEAD`,
-formatting each commit as a list item and ensuring commit messages and bodies
-are properly indented.
+This command also formats each commit as a list item, ensuring commit messages
+and bodies are properly indented.
 
 ### Generating the Title and Description with OpenAI
 
@@ -85,10 +84,10 @@ Here, `prompt` is a string that instructs to generate a PR title or description
 from the git log. For instance, a `prompt` for the title might look like this:
 
 ```python
-prompt = f"You are an expert software engineer preparing the title of a PR. Summarize key changes into a short (max 100 chars) PR title from git log:\n\n{text}\n\n"
+prompt = f"You are an expert software engineer preparing the title of a PR. Summarize key changes into a short (max 100 chars) PR title from git log:\n\n{log}"
 ```
 
-Here `text` is the git log obtained in the previous step.
+Here `log` is the git log obtained in the previous step.
 
 ### Creating the Pull Request
 
@@ -103,9 +102,11 @@ Eventually this command is executed in the shell, creating the PR.
 
 ## Conclusion
 
-By combining Python, OpenAI, and GitHub CLI, we've created a powerful tool that
-streamlines PR creation. It frees us from the tedious process of manually
-entering PR information and allows us to focus more on coding.
+By combining Python, OpenAI, and GitHub CLI, I now have a great tool to speed up PR creation. Once i'm ready to push changes to GitHub, all is needed is to run `,pr-create`.
+
+After typing hundreds of PR titles and descriptions, this little trick feels like an incredible time saver.
+
+Granted, titles and descriptions aren't always on-point. Nonetheless, it's much easier to quickly edit a few logic mistakes in text instead of starting from empty text field. 
 
 If you'd like to use or further explore this script, you can find the complete
 version [here in my dotfiles repo](https://github.com/argshook/dotfiles/blob/master/.argsdotfiles/bin/%2Cpr-create).
