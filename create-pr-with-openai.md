@@ -21,12 +21,12 @@ my script does not clash with some other command.
 
 The complete script is [here in my dotfiles](https://github.com/argshook/dotfiles/blob/master/.argsdotfiles/bin/%2Cpr-create).
 
-It's quite straightforward and easy to copy and use. Make sure `openai` and
-`yaspin` python modules are installed. This can be done with a quick `pip
-install openai yaspin`
+If you want to use it, make sure `openai` and `yaspin` python modules are
+available. This can be done with a quick `pip install openai yaspin`
 
-`yaspin` is just for a spinner to indicate progress. Just because I wanted a
-few sparks in my terminal. Adjust to fit your use case!
+`openai` is used to receive completion from [OpenAI](https://openai.com/) API
+and `yaspin` is for a spinner to indicate progress. Just because I wanted a few
+sparks in my terminal. Adjust to fit your use case!
 
 My script does 3 things:
 
