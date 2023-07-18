@@ -51,8 +51,7 @@ base_commit = subprocess.check_output(
 ).strip()
 ```
 
-After determining the base commit, then we use `git log --pretty` to format the
-log:
+Once we have `base_commit`, then we use it in `git log --pretty` to retrieve and format the log:
 
 ```python
 output = subprocess.check_output(
