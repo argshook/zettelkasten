@@ -16,4 +16,5 @@ This is a messy-experiment.
     + [tig](./linux/tig.html)
     + [tmux](./linux/tmux.html)
     + [vim](./linux/vim.html)
+* [Create PRs with AI](./create-pr-with-openai.html)
 * [Sync vs Async work comparison](./sync-vs-async.html)
