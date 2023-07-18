@@ -33,7 +33,8 @@ My script does 3 things:
 1. Extracts the git log.
 1. Summarizes the changes into a clear, concise title and description using
    OpenAI's `gpt-3.5-turbo` model.
-1. Pushes a PR to GitHub using [`gh cli`](https://cli.github.com/) the generated title and description.
+1. Pushes a PR to GitHub using [`gh cli`](https://cli.github.com/) with the
+   generated title and description.
 
 ### Extracting the Git Log
 
