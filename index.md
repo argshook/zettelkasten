@@ -1,6 +1,6 @@
 ---
 title: Hello, World
-date-modified: 2023-07-18
+date-modified: 2023-07-19
 description: Personal digital garden with notes about programming, software and remote work.
 ---
 
