@@ -44,7 +44,6 @@
 </ol>
 <h3 id="extracting-the-git-log">Extracting the Git Log</h3>
 <p>To obtain a history of changes, we first need to determine the base commit from which the current branch diverged. This can be done using the <code>git merge-base</code> command:</p>
-<p>(python code):</p>
 <pre class="python"><code>base_commit = subprocess.check_output(
     &quot;git merge-base HEAD $(git show-ref --verify --quiet refs/heads/main &amp;&amp; echo &#39;main&#39; || echo &#39;master&#39;)&quot;,
     shell=True,
