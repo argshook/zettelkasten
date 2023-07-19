@@ -42,7 +42,6 @@ To obtain a history of changes, we first need to determine the base commit from
 which the current branch diverged. This can be done using the `git merge-base`
 command:
 
-(python code):
 ```python
 base_commit = subprocess.check_output(
     "git merge-base HEAD $(git show-ref --verify --quiet refs/heads/main && echo 'main' || echo 'master')",
