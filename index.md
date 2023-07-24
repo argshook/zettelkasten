@@ -8,4 +8,6 @@ Welcome to my digital garden!
 
 This is a messy-experiment.
 
+# TOC
+
 ${toc}
