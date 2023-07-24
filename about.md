@@ -23,7 +23,7 @@ Thanks for hanging out!
 
 ---
 
-When working with a computor, I really enjoy taking a lot of notes. Over time I streamlined the note taking process pretty well, to the point where taking notes is very straighforward.
+When I'm with computer, I really enjoy taking notes. Over time I streamlined the note taking process pretty well, to the point where taking notes is very straighforward.
 
 For a while i had the idea to share some of those notes. But there were some problems, for example:
 
