@@ -9,7 +9,5 @@ Welcome to my digital garden!
 This is a messy-experiment.
 
 # Table of Contents
-This is a messy-experiment.
-
 
 ${toc}
