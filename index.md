@@ -12,8 +12,6 @@ This is a messy-experiment.
 <div style="display: flex;">
 ${toc}
 
----
-
 * [About](about.md)
 * [projects](projects.md)
 * linux
