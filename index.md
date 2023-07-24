@@ -8,8 +8,7 @@ Welcome to my digital garden!
 
 This is a messy-experiment.
 
-* [about](about.md)
-* [what-is-this](what-is-this.md)
+* [About](about.md)
 * [projects](projects.md)
 * linux
     + [docker](./linux/docker.md)
