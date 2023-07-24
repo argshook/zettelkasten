@@ -8,6 +8,8 @@ Welcome to my digital garden!
 
 This is a messy-experiment.
 
-# TOC
+# Table of Contents
+This is a messy-experiment.
+
 
 ${toc}
