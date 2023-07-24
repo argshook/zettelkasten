@@ -8,18 +8,4 @@ Welcome to my digital garden!
 
 This is a messy-experiment.
 
-
-<div style="display: flex;">
 ${toc}
-
-* [About](about.md)
-* [projects](projects.md)
-* linux
-    + [docker](./linux/docker.md)
-    + [swap](./linux/swap.md)
-    + [tig](./linux/tig.md)
-    + [tmux](./linux/tmux.md)
-    + [vim](./linux/vim.md)
-* [Publish PRs to github with openai](./create-pr-with-openai.md)
-* [Sync vs Async work comparison](./sync-vs-async.md)
-</div>
