@@ -11,7 +11,7 @@ This is a messy-experiment.
 * [about](about.html)
 * [what-is-this](what-is-this.html)
 * [projects](projects.html)
-* [linux](./linux/index.html)
+* linux
     + [docker](./linux/docker.html)
     + [swap](./linux/swap.html)
     + [tig](./linux/tig.html)
