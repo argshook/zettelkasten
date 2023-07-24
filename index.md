@@ -6,6 +6,4 @@ description: Personal digital garden with notes about programming, software and 
 
 Welcome to my digital garden!
 
-This is a messy-experiment.
-
 ${toc}
