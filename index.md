@@ -9,13 +9,13 @@ Welcome to my digital garden!
 This is a messy-experiment.
 
 * [about](about.md)
-* [what-is-this](what-is-this.html)
-* [projects](projects.html)
+* [what-is-this](what-is-this.md)
+* [projects](projects.md)
 * linux
-    + [docker](./linux/docker.html)
-    + [swap](./linux/swap.html)
-    + [tig](./linux/tig.html)
-    + [tmux](./linux/tmux.html)
-    + [vim](./linux/vim.html)
-* [Publish PRs to github with openai](./create-pr-with-openai.html)
-* [Sync vs Async work comparison](./sync-vs-async.html)
+    + [docker](./linux/docker.md)
+    + [swap](./linux/swap.md)
+    + [tig](./linux/tig.md)
+    + [tmux](./linux/tmux.md)
+    + [vim](./linux/vim.md)
+* [Publish PRs to github with openai](./create-pr-with-openai.md)
+* [Sync vs Async work comparison](./sync-vs-async.md)
