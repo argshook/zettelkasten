@@ -8,7 +8,7 @@ Welcome to my digital garden!
 
 This is a messy-experiment.
 
-* [about](about)
+* [about](about.md)
 * [what-is-this](what-is-this.html)
 * [projects](projects.html)
 * linux
