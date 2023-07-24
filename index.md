@@ -8,7 +8,7 @@ Welcome to my digital garden!
 
 This is a messy-experiment.
 
-@toc
+@toc@
 
 * [About](about.md)
 * [projects](projects.md)
