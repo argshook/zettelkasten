@@ -12,7 +12,7 @@ Just like a real life garden, there are nice, groomed areas, but there also are 
 
 All notes are markdown files and their source can be found on [github](https://github.com/argshook/zettelkasten). I'm happy to accept PRs with additions or fixes!
 
-[relative](./sync-vs-async.html)
+[relative](./create-pr-with-openai.md)
 
 ---
 
