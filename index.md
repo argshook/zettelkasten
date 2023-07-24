@@ -8,6 +8,8 @@ Welcome to my digital garden!
 
 This is a messy-experiment.
 
+$toc$
+
 * [About](about.md)
 * [projects](projects.md)
 * linux
