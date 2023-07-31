@@ -229,13 +229,13 @@ section header {
 
 /* Typography */
 pre[class]::before {
-  content: "Language: " attr(class);
+  content: attr(class);
   display: block;
   background-color: var(--color-accent);
   background-color: #005d9b4f;
   border-radius: var(--border-radius) var(--border-radius) 0 0;
   padding: 0.2rem 1rem;
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   border-bottom: 1px solid #366280;
   text-align: right;
   color: rgba(255, 255, 255, 0.5);
@@ -246,13 +246,14 @@ code {
   border-radius: var(--border-radius);
   color: var(--color-text);
   display: inline-block;
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   font-family: monospace;
-  padding: 0 0.5rem;
+  padding: 0.1rem 0.3rem;
 }
 
 pre code {
   border-radius: 0 0 var(--border-radius) var(--border-radius);
+  padding: 0 0.5rem;
 }
 
 details {
