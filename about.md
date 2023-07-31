@@ -33,7 +33,7 @@ Wanted to share some of those notes, but there were some problems:
 
 These few points were enough to prevent me from sharing.
 
-What i wanted is to have ability to simply hit `save` and have the note published. No other actions at all, just write something down, hit save and it's available online.
+What i wanted is to have ability to simply hit `save` and have the note published. No other actions at all, hit save and be done while notes automatically become available online.
 
 This is what this page is about - it's my collection of notes. They're mostly not well edited, sometimes weirdly formatted or unfinished.
 
