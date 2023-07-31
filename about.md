@@ -25,11 +25,11 @@ Thanks for hanging out!
 
 I enjoy taking notes. Over time I streamlined the note taking process pretty well, to the point where taking notes is very straighforward.
 
-For a while i had the idea to share some of those notes. But there were some problems, for example:
+Wanted to share some of those notes, but there were some problems:
 
-* the hassle of figuring out what should be shared
-* managing private and public notes separately
-* the actions of publishing always felt cumbersome
+* figure out what to shar
+* keep private and public notes separately
+* actions of publishing always felt cumbersome
 
 These few points made be hesitant to share my content until now!
 
