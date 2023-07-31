@@ -1,6 +1,6 @@
 ---
 title: About
-date-modified: 2023-07-24
+date-modified: 2023-07-31
 ---
 
 Hello and welcome to my digital garden.
