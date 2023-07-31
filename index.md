@@ -8,6 +8,6 @@ Welcome to my digital garden!
 
 This is a messy-experiment.
 
-## Contents
+## Index
 
 ${toc}
