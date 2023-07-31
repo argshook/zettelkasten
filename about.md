@@ -5,27 +5,15 @@ date-modified: 2023-07-24
 
 Hello and welcome to my digital garden.
 
-This page is an unordered archive of notes, updated whenever I see fit.\
-It is not a blog and some notes might not even be finished.
-
-Just like a real life garden, there are nice, groomed areas, but there also are some unattended corners, waiting to be improved.
+This page is an unordered archive of notes, updated at random times.
 
 All notes are markdown files and their source can be found on [github](https://github.com/argshook/zettelkasten). I'm happy to accept PRs with additions or fixes!
 
 ---
 
-reach me out on twitter 
-<a href="https://twitter.com/argshook" target="_blank" rel="noopener">@argshook</a>
+I enjoy taking notes. Over time I ironed out the note taking process pretty well, to the point where it is very simple and straighforward.
 
-poke at my code on <a href="https://github.com/argshook" target="_blank" rel="noopener">github</a>
-
-Thanks for hanging out!
-
----
-
-I enjoy taking notes. Over time I streamlined the note taking process pretty well, to the point where taking notes is very straighforward.
-
-Wanted to share some of those notes, but there were some problems:
+Wanted to share some of them, but there were problems:
 
 * figure out what to shar
 * keep private and public notes separately
@@ -42,3 +30,12 @@ They're not well edited, sometimes unformatted or completely unfinished.
 But it's a living thing - a digital garden.
 
 It's available on github, you're very welcome to contribute! [https://github.com/argshook/zettelkasten](https://github.com/argshook/zettelkasten)
+
+---
+
+reach me out on twitter 
+<a href="https://twitter.com/argshook" target="_blank" rel="noopener">@argshook</a>
+
+poke at my code on <a href="https://github.com/argshook" target="_blank" rel="noopener">github</a>
+
+Thanks for hanging out!
