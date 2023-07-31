@@ -31,9 +31,9 @@ Wanted to share some of those notes, but there were some problems:
 * keep private and public notes separately
 * actions of publishing always felt cumbersome
 
-These few points made be hesitant to share my content until now!
+These few points were enough to prevent me from sharing.
 
-What i wanted for a while is to have ability to just hit save and have the note published. No other actions at all, just write something down, hit save and it's available online.
+What i wanted is to have ability to simply hit <kbd>save</kbd> and have the note published. No other actions at all, just write something down, hit save and it's available online.
 
 This is what this page is about - it's my collection of notes. They're mostly not well edited, sometimes weirdly formatted or unfinished.
 
