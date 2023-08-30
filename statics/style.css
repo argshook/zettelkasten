@@ -231,18 +231,17 @@ section header {
 pre[class]::before {
   content: attr(class);
   display: block;
-  background-color: var(--color-accent);
-  background-color: #005d9b4f;
+  background-color: #0f0f0f;
   border-radius: var(--border-radius) var(--border-radius) 0 0;
   padding: 0.2rem 1rem;
   font-size: 0.7rem;
-  border-bottom: 1px solid #366280;
+  border-bottom: 1px solid #373b3d;
   text-align: right;
   color: rgba(255, 255, 255, 0.5);
 }
 
 code {
-  background-color: var(--color-accent);
+  background-color: #222;
   border-radius: var(--border-radius);
   color: var(--color-text);
   display: inline-block;
