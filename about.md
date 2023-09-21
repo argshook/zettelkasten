@@ -28,12 +28,3 @@ This is that page. A random collection of personal notes with links between them
 Notes are not well edited, sometimes unformatted or completely unfinished.
 
 [Content is open sourced on github](https://github.com/argshook/zettelkasten)
-
----
-
-reach me out on twitter 
-<a href="https://twitter.com/argshook" target="_blank" rel="noopener">@argshook</a>
-
-poke at my code on <a href="https://github.com/argshook" target="_blank" rel="noopener">github</a>
-
-Thanks for hanging out!
