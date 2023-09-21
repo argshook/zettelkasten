@@ -23,13 +23,11 @@ These few points were enough to prevent me from sharing.
 
 What i wanted is to have ability to simply hit `save` and have the note published. No other actions at all, hit save and be done while notes automatically become available online.
 
-Tsome his is that page. A random collection of personal notes with links between them. It's not a blog, there are no posts or a timeline.
+This is that page. A random collection of personal notes with links between them. It's not a blog, there are no posts or a timeline.
 
-They're not well edited, sometimes unformatted or completely unfinished.
+Notes are not well edited, sometimes unformatted or completely unfinished.
 
-But it's a living thing - a digital garden.
-
-It's available on github, you're very welcome to contribute! [https://github.com/argshook/zettelkasten](https://github.com/argshook/zettelkasten)
+[Content is open sourced on github](https://github.com/argshook/zettelkasten)
 
 ---
 
