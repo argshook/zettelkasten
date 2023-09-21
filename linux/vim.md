@@ -1,6 +1,6 @@
 ---
 title: Vim
-date-modified: 2023-07-18
+date-modified: 2023-09-21
 ---
 
 ## Move lines matching pattern to the bottom of file
