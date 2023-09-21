@@ -15,7 +15,7 @@ I enjoy taking notes. Over time I ironed out the note taking process pretty well
 
 Wanted to share some of them, but there were problems:
 
-* figure out what to shar
+* figure out what to share
 * keep private and public notes separately
 * actions of publishing always felt cumbersome
 
