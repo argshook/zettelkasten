@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
     <meta name="author" content="Arijus Šukys <argshook@gmail.com>" />
     <meta name="date" content="2024-01-02" />
-    <title>arij.us - linux/tig</title>
+    <title>arij.us - linux/java</title>
     <link rel="stylesheet" href="https://arij.us/statics/style.css" />
-    <link rel="canonical" href="https://arij.us/linux/tig.md" />
+    <link rel="canonical" href="https://arij.us/linux/java.md" />
   </head>
-  <body data-slug="linux/tig">
+  <body data-slug="linux/java">
     <main>
       <header class="header">
         <a class="header-title" href="https://arij.us">
@@ -27,21 +27,13 @@
       </header>
 
       <article class="article">
-        <h1 class="article-title">Tig</h1>
+        <h1 class="article-title">Java</h1>
                 <div class="last-modified">Last updated 2024-01-02</div>
-        <h2 id="advanced-filtering">Advanced filtering</h2>
-<p>Just pipe <code>git log</code> right into <code>tig</code>, for example:</p>
-<pre><code>git log --author=&quot;Name Surname&quot; | tig</code></pre>
-<h2 id="view-revisions-of-file">View revisions of file</h2>
-<p>Use <code>blame</code>:</p>
-<ul>
-<li><code>vt</code> to open tree view of commit</li>
-<li>navigate to file with hjkl and enter</li>
-<li><code>b</code> to open <code>blame</code> view</li>
-<li><code>b</code> again to step backwards of a given line</li>
-<li><code>,</code> to step backwards to the parent commit of a given line</li>
-<li><code>&lt;</code> to return to where you were previously</li>
-</ul>
+        <h2 id="change-java-version-in-arch-linux">Change <code>java</code> version in arch linux</h2>
+<p>Use <code>archlinux-java</code> command, for example:</p>
+<pre class="bash"><code>archlinux-java set java-11-openjdk</code></pre>
+<p>To list available versions:</p>
+<pre class="bash"><code>archlinux-java status</code></pre>
       </article>
     </main>
   </body>
