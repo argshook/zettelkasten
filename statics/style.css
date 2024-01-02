@@ -246,7 +246,7 @@ code {
   border-radius: var(--border-radius);
   color: var(--color-text);
   display: inline-block;
-  font-size: 0.7rem;
+  font-size: 0.7em;
   font-family: monospace;
   padding: 0.1rem 0.3rem;
 }
