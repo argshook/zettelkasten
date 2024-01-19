@@ -52,11 +52,11 @@ export * from &#39;./button&#39;;</code></pre>
 <pre><code>export { Input } from &#39;./input&#39;;
 export type { Props as InputProps } from &#39;./input&#39;;</code></pre>
 <p>but this is not very ergonomic. Ultimate solution is to have per-component exports:</p>
-<pre><code>import { Input, Props } from &#39;@dhub/ui/input&#39;
+<pre><code>import { Input, Props } from &#39;components/ui/input&#39;
 // in case of name clash we can rename at use-site:
-import { Button, Props as ButonProps } from &#39;@dhub/ui/button&#39;</code></pre>
+import { Button, Props as ButonProps } from &#39;components/ui/button&#39;</code></pre>
 <p>this way <code>index.ts</code> export file is not needed at all.</p>
-<p>to achieve <code>@dhub/ui/input</code> path, we can leverage <code>package.json</code> <code>exports</code> field:</p>
+<p>to achieve <code>components/ui/input</code> path, we can leverage <code>package.json</code> <code>exports</code> field:</p>
 <pre><code>{
   &quot;exports&quot;: {
     &quot;.&quot;: &quot;./dist/index.js&quot;,
