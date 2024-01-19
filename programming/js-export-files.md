@@ -46,14 +46,14 @@ but this is not very ergonomic. Ultimate solution is to have
 per-component exports:
 
 ```
-import { Input, Props } from '@dhub/ui/input'
+import { Input, Props } from 'components/ui/input'
 // in case of name clash we can rename at use-site:
-import { Button, Props as ButonProps } from '@dhub/ui/button'
+import { Button, Props as ButonProps } from 'components/ui/button'
 ```
 
 this way `index.ts` export file is not needed at all.
 
-to achieve `@dhub/ui/input` path, we can leverage `package.json` `exports` field:
+to achieve `components/ui/input` path, we can leverage `package.json` `exports` field:
 ```
 {
   "exports": {
