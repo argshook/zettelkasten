@@ -63,7 +63,6 @@ select-pane -t:.1 -P 'fg=red,bg=white'
 1. Open command prompt with <kbd>prefix</kbd>+<kbd>:</kbd> (in my case prefix is <kbd>ctrl</kbd>+<kbd>a</kbd>, so full command is <kbd>ctrl</kbd>+<kbd>a</kbd>+<kbd>:</kbd>)
 2. `set -g status off`
 
-
 ## split programatically
 
 ```
