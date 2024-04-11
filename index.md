@@ -6,6 +6,8 @@ description: Personal digital garden with notes about programming, software and 
 
 Welcome to my digital garden!
 
+Check out the project I'm building: [https://dhub.dev/](https://dhub.dev/)
+
 ## Index
 
 ${toc}
