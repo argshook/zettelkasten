@@ -50,3 +50,8 @@ greet("Alice");  // "Alice" is the argument. →
 
 Understanding the distinction between parameters and arguments helps in writing clearer, more effective functions. Parameters act as your function's input placeholders, while arguments are the real values you feed into those placeholders. Happy coding!
 
+
+---
+
+This page was edited with [Dhub](https://dhub.dev) - super simple documentation editor I'm working on.
+Give it a try for free!
