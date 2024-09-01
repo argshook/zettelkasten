@@ -102,6 +102,9 @@ h6 {
   margin-top: calc(2 * var(--spacing-unit));
   margin-bottom: var(--spacing-unit);
   font-weight: 500;
+  background: var(--gradient-text);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 h1 {
@@ -146,7 +149,7 @@ a:focus {
   background-size: cover;
   background-blend-mode: hard-light;
   padding: calc(1.5 * var(--spacing-unit)) 0 var(--spacing-unit);
-  box-shadow: var(--box-shadow);
+  box-shadow: 0 1px 3px 2px rgba(0, 0, 0, 0.1);
 }
 
 .site-header .container {
@@ -218,9 +221,6 @@ main article {
   display: inline-block; /* for the gradient */
   margin-top: 0;
   font-size: 2.5rem;
-  background: var(--gradient-text);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
   background-clip: text;
 }
 
@@ -234,23 +234,51 @@ main article {
 pre,
 code {
   font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
-  font-size: 0.9rem;
-  background-color: var(--color-surface);
-  border-radius: var(--border-radius);
+  font-size: 0.8rem;
+}
+
+:is(h1, h2, h3, h4, h5, h6) code {
+  font-size: 0.7em;
+  padding: 0.1em 0.3em;
+  background: none;
 }
 
 pre {
-  padding: var(--spacing-unit);
+  position: relative;
+  padding: calc(var(--spacing-unit) / 3.5);
   overflow-x: auto;
   margin: calc(1.5 * var(--spacing-unit)) 0;
+  background: var(--gradient-text);
+  border-radius: var(--border-radius);
+}
+
+pre[class]::before {
+  position: absolute;
+  top: calc(var(--spacing-unit) / 2);
+  right: calc(var(--spacing-unit) / 2.5);
+  content: attr(class);
+  pointer-events: none;
+  padding: 0.2rem 1rem;
+  font-size: 0.6rem;
+  color: var(--color-text);
+  z-index: 1;
+  opacity: 0.6;
 }
 
 code {
   padding: 0.2em 0.4em;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius);
+  color: var(--color-text);
 }
 
-.skip-link:focus {
-  top: 0;
+pre code {
+  padding: calc(var(--spacing-unit) / 2) calc(var(--spacing-unit) / 1.5);
+  background: var(--color-surface);
+  border-radius: calc(var(--border-radius) / 1.5);
+  display: block;
+  opacity: 0.7;
 }
 
 /* Theme toggle */
