@@ -101,7 +101,9 @@ h6 {
   line-height: var(--line-height-heading);
   margin-top: calc(2 * var(--spacing-unit));
   margin-bottom: var(--spacing-unit);
-  font-weight: 500;
+  font-family: "Rambla", sans-serif;
+  font-weight: 400;
+  font-style: normal;
   background: var(--gradient-text);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -179,6 +181,7 @@ a:focus {
   grid-column: 2;
   align-self: end;
   margin: 0;
+  font-family: "Rambla", sans-serif;
   font-size: 2rem;
   font-weight: 400;
   background: var(--gradient-text);
@@ -206,7 +209,8 @@ a:focus {
 
 .site-nav a {
   color: var(--color-text);
-  font-weight: 600;
+  font-family: "Rambla", sans-serif;
+  font-weight: 400;
   font-size: 1rem;
   padding: 0.5rem 0;
   display: block;
@@ -218,6 +222,14 @@ a:focus {
 .site-nav a:focus {
   border-bottom-color: var(--color-text);
   opacity: 1;
+}
+
+.open-sans-regular {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
 }
 
 /* Main content */
@@ -275,7 +287,7 @@ article hr {
 .article-meta {
   color: var(--color-text-secondary);
   font-size: 0.8rem;
-  margin-bottom: calc(1.5 * var(--spacing-unit));
+  margin-top: calc(2 * var(--spacing-unit));
   text-align: right;
   opacity: 0.8;
 }
@@ -283,7 +295,10 @@ article hr {
 /* Code blocks */
 pre,
 code {
-  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+  font-family: "Fira Code", monospace;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
   font-size: 0.8rem;
 }
 
@@ -406,6 +421,18 @@ article ul {
 
 article ol {
   list-style-type: decimal;
+}
+
+article blockquote {
+  margin: calc(1 * var(--spacing-unit)) 0;
+  padding: 0 var(--spacing-unit);
+  border-left: 3px solid var(--color-link);
+  color: var(--color-text-secondary);
+}
+
+article blockquote p strong:first-child {
+  display: block;
+  font-size: 1.2rem;
 }
 
 /* Responsive design - Mobile First */
