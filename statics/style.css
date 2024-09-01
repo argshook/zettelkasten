@@ -360,24 +360,24 @@ pre code {
   gap: 2rem;
 }
 
-ul,
-ol {
+article ul,
+article ol {
   margin-left: calc(0.5 * var(--spacing-unit));
   padding: 0;
 }
 
-ul li,
-ol li {
+article ul li,
+article ol li {
   line-height: var(--line-height-body);
   font-size: 1rem;
 }
 
-ul li {
+article ul li {
   position: relative;
   padding-left: 1rem;
 }
 
-ul li::before {
+article ul li::before {
   content: "•";
   position: absolute;
   left: 0;
@@ -387,11 +387,11 @@ ul li::before {
   color: var(--color-link);
 }
 
-ul {
+article ul {
   list-style: none;
 }
 
-ol {
+article ol {
   list-style-type: decimal;
 }
 
