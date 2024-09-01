@@ -69,7 +69,7 @@ export type { Props as InputProps } from &#39;./input&#39;;</code></pre>
 import { Button, Props as ButonProps } from &#39;components/ui/button&#39;</code></pre>
 <p>this way <code>index.ts</code> export file is not needed at all.</p>
 <p>to achieve <code>components/ui/input</code> path, we can leverage <code>package.json</code> <code>exports</code> field:</p>
-<pre><code>{
+<pre class="json"><code>{
   &quot;exports&quot;: {
     &quot;.&quot;: &quot;./dist/index.js&quot;,
     &quot;./input&quot;: &quot;./dist/input.js&quot;
