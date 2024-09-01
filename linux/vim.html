@@ -42,36 +42,46 @@
       <article>
         <h1 id="title" class="article-title">Vim</h1>
         <h2 id="move-lines-matching-pattern-to-the-bottom-of-file">Move lines matching pattern to the bottom of file</h2>
-<pre class="vim"><code>:g/[pattern]/m $</code></pre>
-<h3 id="example">Example</h3>
-<p>I had a bash file with repeated patterns of:</p>
-<pre class="bash"><code>_some_function () {
-  # ...
-}
-alias some_function=_some_function
+        <pre class="vim"><code>:g/[pattern]/m $</code></pre>
+        <h3 id="example">Example</h3>
+        <p>I had a bash file with repeated patterns of:</p>
+        <pre class="bash"><code>_some_function () {
+          # ...
+        }
+        alias some_function=_some_function
 
-_another_function () {
-  # ...
-}
-alias another_function=_another_function</code></pre>
-<p>Wanted to detach function declarations and aliases, so that file would look like:</p>
-<pre class="bash"><code>_some_function () {
-  # ...
-}
+        _another_function () {
+          # ...
+        }
+        alias another_function=_another_function</code></pre>
+        <p>Wanted to detach function declarations and aliases, so that file would look like:</p>
+        <pre class="bash"><code>_some_function () {
+          # ...
+        }
 
-_another_function () {
-  # ...
-}
+        _another_function () {
+          # ...
+        }
 
-alias some_function=_some_function
-alias another_function=_another_function</code></pre>
-<p>I used the following command:</p>
-<pre class="vim"><code>:g/^alias/m $</code></pre>
-<p>Function declarations remain untouched, while all aliases go down to the bottom of file.</p>
-<p>The <code>:g[lobal]</code> command is neat! <a href="https://vimhelp.org/repeat.txt.html#%3Aglobal"><code>:help :global</code></a></p>
-<h2 id="reverse-order-of-lines">Reverse order of lines</h2>
-<pre class="vim"><code>:g/^/m0</code></pre>         <p class="article-meta">Last updated: 2024-01-02</p>
-              </article>
+        alias some_function=_some_function
+        alias another_function=_another_function</code></pre>
+        <p>I used the following command:</p>
+        <pre class="vim"><code>:g/^alias/m $</code></pre>
+        <p>Function declarations remain untouched, while all aliases go down to the bottom of file.</p>
+        <p>The <code>:g[lobal]</code> command is neat! <a href="https://vimhelp.org/repeat.txt.html#%3Aglobal"><code>:help :global</code></a></p>
+        <h2 id="reverse-order-of-lines">Reverse order of lines</h2>
+        <pre class="vim"><code>:g/^/m0</code></pre>
+        <div class="article-meta">
+                    <div>Last updated: 2024-01-02</div>
+                    <a
+            href="https://github.com/argshook/zettelkasten/edit/main/linux/vim.md"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Edit this page on GitHub
+          </a>
+        </div>
+      </article>
     </main>
 
     <footer class="site-footer">

@@ -42,41 +42,51 @@
       <article>
         <h1 id="title" class="article-title">JS Export Files</h1>
         <p>I have a personal grudge against files like this:</p>
-<pre><code>export * from &#39;./input&#39;
-export * from &#39;./input-field&#39;
-export * from &#39;./check-label&#39;
-export * from &#39;./checkbox&#39;
-export * from &#39;./dropdown&#39;
-export * from &#39;./icons&#39;
-export * from &#39;./loader&#39;
-// ... And so on</code></pre>
-<p>There are few reasons why this is suboptimal, one of which is name clashing.</p>
-<p>For example <code>./input</code> file should be allowed to, say <code>export type Props</code> (instead of the verbose <code>export type InputProps</code>).</p>
-<p>but then <code>index.ts</code> cannot do:</p>
-<pre><code>export * from &#39;./input&#39;;
-export * from &#39;./button&#39;;</code></pre>
-<p>because both <code>input</code> and <code>button</code> might export <code>Props</code> type. so we have to choose. We can do:</p>
-<p><code>button.tsx</code>:</p>
-<pre><code>export type ButtonProps = { ... }
-// instead of more preferable
-// export type Props = { ... }</code></pre>
-<p>or we need to juggle <code>index.ts</code> files to do:</p>
-<pre><code>export { Input } from &#39;./input&#39;;
-export type { Props as InputProps } from &#39;./input&#39;;</code></pre>
-<p>but this is not very ergonomic. Ultimate solution is to have per-component exports:</p>
-<pre><code>import { Input, Props } from &#39;components/ui/input&#39;
-// in case of name clash we can rename at use-site:
-import { Button, Props as ButonProps } from &#39;components/ui/button&#39;</code></pre>
-<p>this way <code>index.ts</code> export file is not needed at all.</p>
-<p>to achieve <code>components/ui/input</code> path, we can leverage <code>package.json</code> <code>exports</code> field:</p>
-<pre class="json"><code>{
-  &quot;exports&quot;: {
-    &quot;.&quot;: &quot;./dist/index.js&quot;,
-    &quot;./input&quot;: &quot;./dist/input.js&quot;
-  }
-}</code></pre>
-<p>this can be automated</p>         <p class="article-meta">Last updated: 2024-01-19</p>
-              </article>
+        <pre><code>export * from &#39;./input&#39;
+        export * from &#39;./input-field&#39;
+        export * from &#39;./check-label&#39;
+        export * from &#39;./checkbox&#39;
+        export * from &#39;./dropdown&#39;
+        export * from &#39;./icons&#39;
+        export * from &#39;./loader&#39;
+        // ... And so on</code></pre>
+        <p>There are few reasons why this is suboptimal, one of which is name clashing.</p>
+        <p>For example <code>./input</code> file should be allowed to, say <code>export type Props</code> (instead of the verbose <code>export type InputProps</code>).</p>
+        <p>but then <code>index.ts</code> cannot do:</p>
+        <pre><code>export * from &#39;./input&#39;;
+        export * from &#39;./button&#39;;</code></pre>
+        <p>because both <code>input</code> and <code>button</code> might export <code>Props</code> type. so we have to choose. We can do:</p>
+        <p><code>button.tsx</code>:</p>
+        <pre><code>export type ButtonProps = { ... }
+        // instead of more preferable
+        // export type Props = { ... }</code></pre>
+        <p>or we need to juggle <code>index.ts</code> files to do:</p>
+        <pre><code>export { Input } from &#39;./input&#39;;
+        export type { Props as InputProps } from &#39;./input&#39;;</code></pre>
+        <p>but this is not very ergonomic. Ultimate solution is to have per-component exports:</p>
+        <pre><code>import { Input, Props } from &#39;components/ui/input&#39;
+        // in case of name clash we can rename at use-site:
+        import { Button, Props as ButonProps } from &#39;components/ui/button&#39;</code></pre>
+        <p>this way <code>index.ts</code> export file is not needed at all.</p>
+        <p>to achieve <code>components/ui/input</code> path, we can leverage <code>package.json</code> <code>exports</code> field:</p>
+        <pre class="json"><code>{
+          &quot;exports&quot;: {
+            &quot;.&quot;: &quot;./dist/index.js&quot;,
+            &quot;./input&quot;: &quot;./dist/input.js&quot;
+          }
+        }</code></pre>
+        <p>this can be automated</p>
+        <div class="article-meta">
+                    <div>Last updated: 2024-01-19</div>
+                    <a
+            href="https://github.com/argshook/zettelkasten/edit/main/programming/js-export-files.md"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Edit this page on GitHub
+          </a>
+        </div>
+      </article>
     </main>
 
     <footer class="site-footer">

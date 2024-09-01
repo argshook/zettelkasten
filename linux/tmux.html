@@ -42,43 +42,53 @@
       <article>
         <h1 id="title" class="article-title">Tmux</h1>
         <p>Below <code>prefix</code> is mentioned multiple times. By default it is <code>&lt;C-b&gt;</code> which is <code>ctrl</code> + <code>b</code>.</p>
-<p>It can be remapped to other key, i like to use <code>ctrl</code> + <code>a</code>:</p>
-<pre><code>set -g prefix C-a</code></pre>
-<h2 id="detach-from-specific-session">Detach from specific session</h2>
-<p>You can choose which session to detach with <code>prefix</code> + <code>D</code> (uppercase <code>D</code>)</p>
-<h2 id="list-all-key-bindings">List all key bindings</h2>
-<pre><code>tmux list-keys</code></pre>
-<p>or within tmux</p>
-<pre><code>:list-keys</code></pre>
-<p>or</p>
-<pre><code>`prefix` + `?`</code></pre>
-<h2 id="kill-window">Kill window</h2>
-<p><code>prefix</code> + <code>&amp;</code></p>
-<h2 id="kill-pane">Kill pane</h2>
-<p><code>prefix</code> + <code>x</code></p>
-<h2 id="change-color-of-one-pane">Change color of one pane</h2>
-<pre><code>select-pane -t:.1 -P &#39;fg=red,bg=white&#39;</code></pre>
-<h2 id="extract-current-pane-into-new-window">Extract current pane into new window</h2>
-<p><code>prefix</code> + <code>!</code></p>
-<h2 id="move-pane-to-somewhere-else">Move pane to somewhere else</h2>
-<ol type="1">
-<li>go to pane you want to move</li>
-<li>mark it with <code>prefix + m</code></li>
-<li>go to destination window/session</li>
-<li><code>:join-pane</code></li>
-</ol>
-<h2 id="disable-status-bar">Disable status bar</h2>
-<ol type="1">
-<li>Open command prompt with <kbd>prefix</kbd>+<kbd>:</kbd> (in my case prefix is <kbd>ctrl</kbd>+<kbd>a</kbd>, so full command is <kbd>ctrl</kbd>+<kbd>a</kbd>+<kbd>:</kbd>)</li>
-<li><code>set -g status off</code></li>
-</ol>
-<h2 id="split-programatically">split programatically</h2>
-<pre><code>tmux split-window &quot;echo hey&quot;</code></pre>
-<p>This will work but close immediatelly after <code>echo</code></p>
-<p>To keep it open:</p>
-<pre><code>tmux set-option remain-on-exit on
-tmux split-window &quot;echo hey&quot;</code></pre>         <p class="article-meta">Last updated: 2023-01-04</p>
-              </article>
+        <p>It can be remapped to other key, i like to use <code>ctrl</code> + <code>a</code>:</p>
+        <pre><code>set -g prefix C-a</code></pre>
+        <h2 id="detach-from-specific-session">Detach from specific session</h2>
+        <p>You can choose which session to detach with <code>prefix</code> + <code>D</code> (uppercase <code>D</code>)</p>
+        <h2 id="list-all-key-bindings">List all key bindings</h2>
+        <pre><code>tmux list-keys</code></pre>
+        <p>or within tmux</p>
+        <pre><code>:list-keys</code></pre>
+        <p>or</p>
+        <pre><code>`prefix` + `?`</code></pre>
+        <h2 id="kill-window">Kill window</h2>
+        <p><code>prefix</code> + <code>&amp;</code></p>
+        <h2 id="kill-pane">Kill pane</h2>
+        <p><code>prefix</code> + <code>x</code></p>
+        <h2 id="change-color-of-one-pane">Change color of one pane</h2>
+        <pre><code>select-pane -t:.1 -P &#39;fg=red,bg=white&#39;</code></pre>
+        <h2 id="extract-current-pane-into-new-window">Extract current pane into new window</h2>
+        <p><code>prefix</code> + <code>!</code></p>
+        <h2 id="move-pane-to-somewhere-else">Move pane to somewhere else</h2>
+        <ol type="1">
+        <li>go to pane you want to move</li>
+        <li>mark it with <code>prefix + m</code></li>
+        <li>go to destination window/session</li>
+        <li><code>:join-pane</code></li>
+        </ol>
+        <h2 id="disable-status-bar">Disable status bar</h2>
+        <ol type="1">
+        <li>Open command prompt with <kbd>prefix</kbd>+<kbd>:</kbd> (in my case prefix is <kbd>ctrl</kbd>+<kbd>a</kbd>, so full command is <kbd>ctrl</kbd>+<kbd>a</kbd>+<kbd>:</kbd>)</li>
+        <li><code>set -g status off</code></li>
+        </ol>
+        <h2 id="split-programatically">split programatically</h2>
+        <pre><code>tmux split-window &quot;echo hey&quot;</code></pre>
+        <p>This will work but close immediatelly after <code>echo</code></p>
+        <p>To keep it open:</p>
+        <pre><code>tmux set-option remain-on-exit on
+        tmux split-window &quot;echo hey&quot;</code></pre>
+        <div class="article-meta">
+                    <div>Last updated: 2023-01-04</div>
+                    <a
+            href="https://github.com/argshook/zettelkasten/edit/main/linux/tmux.md"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Edit this page on GitHub
+          </a>
+        </div>
+      </article>
     </main>
 
     <footer class="site-footer">

@@ -42,23 +42,33 @@
       <article>
         <h1 id="title" class="article-title">Swap</h1>
         <h2 id="check-swappiness">Check swappiness</h2>
-<pre><code>cat /proc/sys/vm/swappiness</code></pre>
-<p>Default is <code>60</code>. Accepted value is in range of 0-100.<br />
-Low value - little swapping, high value - aggressive swapping.</p>
-<h2 id="change-swappiness">Change swappiness</h2>
-<p>Run as root:</p>
-<pre><code>sysctl vm.swappiness=x</code></pre>
-<p>Where <code>x</code> is number in range of 0 - 100.</p>
-<h2 id="clear-swap">Clear swap</h2>
-<p>Did you try to turn it off an on again?</p>
-<p>Clear swap by turning it off. This will move swap content to RAM.</p>
-<ol type="1">
-<li><p>Check that you have enough RAM to fit swap: <code>free -mh</code> Mem free should be larger than Swap total.</p></li>
-<li><p>Turn off swap, as root: <code>swapoff -a</code></p></li>
-<li><p>Turn on swap, as root: <code>swapon -a</code></p></li>
-<li><p>Enjoy life</p></li>
-</ol>         <p class="article-meta">Last updated: 2023-07-24</p>
-              </article>
+        <pre><code>cat /proc/sys/vm/swappiness</code></pre>
+        <p>Default is <code>60</code>. Accepted value is in range of 0-100.<br />
+        Low value - little swapping, high value - aggressive swapping.</p>
+        <h2 id="change-swappiness">Change swappiness</h2>
+        <p>Run as root:</p>
+        <pre><code>sysctl vm.swappiness=x</code></pre>
+        <p>Where <code>x</code> is number in range of 0 - 100.</p>
+        <h2 id="clear-swap">Clear swap</h2>
+        <p>Did you try to turn it off an on again?</p>
+        <p>Clear swap by turning it off. This will move swap content to RAM.</p>
+        <ol type="1">
+        <li><p>Check that you have enough RAM to fit swap: <code>free -mh</code> Mem free should be larger than Swap total.</p></li>
+        <li><p>Turn off swap, as root: <code>swapoff -a</code></p></li>
+        <li><p>Turn on swap, as root: <code>swapon -a</code></p></li>
+        <li><p>Enjoy life</p></li>
+        </ol>
+        <div class="article-meta">
+                    <div>Last updated: 2023-07-24</div>
+                    <a
+            href="https://github.com/argshook/zettelkasten/edit/main/linux/swap.md"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Edit this page on GitHub
+          </a>
+        </div>
+      </article>
     </main>
 
     <footer class="site-footer">

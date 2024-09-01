@@ -42,55 +42,65 @@
       <article>
         <h1 id="title" class="article-title">Turbocharging GitHub PR Creation with Python, OpenAI, and GitHub CLI</h1>
         <p>Developers who push numerous PRs daily can understand the taxing effort it takes to consistently pull-off comprehensive titles and descriptions. After writing great commit messages there should be no need to again write the PR description - it’s essentially the same thing in a different format.</p>
-<p>I decided to automate the process of creating PRs. Not only pushing code with <code>gh pr create</code>, but also generating values for title and description.</p>
-<p>Using <code>python</code> as a glue to combine Git, GitHub CLI (<code>gh</code>), and OpenAI’s API, I ended up with a simple script.</p>
-<p>I chose to put it as <code>,pr-create</code> command. The comma (<code>,</code>) is just to make sure my script does not clash with some other command.</p>
-<h2 id="script-overview">Script Overview</h2>
-<p>The complete script is <a href="https://github.com/argshook/dotfiles/blob/master/.argsdotfiles/bin/%2Cpr-create">here in my dotfiles</a>.</p>
-<p>If you want to use it, make sure <code>openai</code> and <code>yaspin</code> python modules are available. This can be done with a quick <code>pip install openai yaspin</code></p>
-<p><code>openai</code> is used to receive completion from <a href="https://openai.com/">OpenAI</a> API and <code>yaspin</code> is for a spinner to indicate progress. Just because I wanted a few sparks in my terminal. Adjust to fit your use case!</p>
-<p>My script does 3 things:</p>
-<ol type="1">
-<li>Extracts the git log.</li>
-<li>Summarizes the changes into a clear, concise title and description using OpenAI’s <code>gpt-3.5-turbo</code> model.</li>
-<li>Pushes a PR to GitHub using <a href="https://cli.github.com/"><code>gh cli</code></a> with the generated title and description.</li>
-</ol>
-<h3 id="extracting-the-git-log">Extracting the Git Log</h3>
-<p>To obtain a history of changes, we first need to determine the base commit from which the current branch diverged. This can be done using the <code>git merge-base</code> command:</p>
-<pre class="python"><code>base_commit = subprocess.check_output(
-    &quot;git merge-base HEAD $(git show-ref --verify --quiet refs/heads/main &amp;&amp; echo &#39;main&#39; || echo &#39;master&#39;)&quot;,
-    shell=True,
-    universal_newlines=True
-).strip()</code></pre>
-<p>Once we have <code>base_commit</code>, then we use it in <code>git log --pretty</code> to retrieve and format the log:</p>
-<pre class="python"><code>output = subprocess.check_output(
-    f&#39;git log --reverse --pretty=format:&quot;* %s%n%w(0,4,4)%b&quot; {base_commit}..HEAD&#39;,
-    shell=True,
-    universal_newlines=True
-)</code></pre>
-<p>This command also formats each commit as a list item, ensuring commit messages and bodies are properly indented.</p>
-<h3 id="generating-the-title-and-description-with-openai">Generating the Title and Description with OpenAI</h3>
-<p>The OpenAI <code>gpt-3.5-turbo</code> model is then used to generate a human-friendly title and description based on the git log. Using OpenAI API is a breeze with the official <code>openai</code> python module:</p>
-<pre class="python"><code>response = openai.ChatCompletion.create(
-    model=&#39;gpt-3.5-turbo&#39;,
-    temperature=0.2,
-    n=1,
-    messages=[{&#39;role&#39;: &#39;user&#39;, &#39;content&#39;: prompt}]
-)
-output = response.choices[0].message.content.strip().strip(&#39;&quot;&#39;)</code></pre>
-<p>Here, <code>prompt</code> is a string that instructs to generate a PR title or description from the git log. For instance, a <code>prompt</code> for the title might look like this:</p>
-<pre class="python"><code>prompt = f&quot;You are an expert software engineer preparing the title of a PR. Summarize key changes into a short (max 100 chars) PR title from git log:\n\n{log}&quot;</code></pre>
-<p>Here <code>log</code> is the git log obtained in the previous step.</p>
-<h3 id="creating-the-pull-request">Creating the Pull Request</h3>
-<p>Finally, we combine generated title and description to create a command for GitHub CLI to create the PR:</p>
-<pre class="python"><code>command = f&#39;gh pr create --assignee @me --title {title} --body {body}&#39;</code></pre>
-<p>Eventually this command is executed in the shell, creating the PR.</p>
-<h2 id="conclusion">Conclusion</h2>
-<p>By combining Python, OpenAI, and GitHub CLI, I now have a great tool to speed up PR creation. Once i’m ready to push changes to GitHub, all is needed is to run <code>,pr-create</code>.</p>
-<p>After typing hundreds of PR titles and descriptions, this little trick feels like an incredible time saver.</p>
-<p>Granted, titles and descriptions aren’t always on-point. Nonetheless, it’s much easier to quickly edit a few logic mistakes in text instead of starting from empty text field.</p>
-<p>If you’d like to use or further explore this script, you can find the complete version <a href="https://github.com/argshook/dotfiles/blob/master/.argsdotfiles/bin/%2Cpr-create">here in my dotfiles repo</a>.</p>         <p class="article-meta">Last updated: 2023-07-24</p>
-              </article>
+        <p>I decided to automate the process of creating PRs. Not only pushing code with <code>gh pr create</code>, but also generating values for title and description.</p>
+        <p>Using <code>python</code> as a glue to combine Git, GitHub CLI (<code>gh</code>), and OpenAI’s API, I ended up with a simple script.</p>
+        <p>I chose to put it as <code>,pr-create</code> command. The comma (<code>,</code>) is just to make sure my script does not clash with some other command.</p>
+        <h2 id="script-overview">Script Overview</h2>
+        <p>The complete script is <a href="https://github.com/argshook/dotfiles/blob/master/.argsdotfiles/bin/%2Cpr-create">here in my dotfiles</a>.</p>
+        <p>If you want to use it, make sure <code>openai</code> and <code>yaspin</code> python modules are available. This can be done with a quick <code>pip install openai yaspin</code></p>
+        <p><code>openai</code> is used to receive completion from <a href="https://openai.com/">OpenAI</a> API and <code>yaspin</code> is for a spinner to indicate progress. Just because I wanted a few sparks in my terminal. Adjust to fit your use case!</p>
+        <p>My script does 3 things:</p>
+        <ol type="1">
+        <li>Extracts the git log.</li>
+        <li>Summarizes the changes into a clear, concise title and description using OpenAI’s <code>gpt-3.5-turbo</code> model.</li>
+        <li>Pushes a PR to GitHub using <a href="https://cli.github.com/"><code>gh cli</code></a> with the generated title and description.</li>
+        </ol>
+        <h3 id="extracting-the-git-log">Extracting the Git Log</h3>
+        <p>To obtain a history of changes, we first need to determine the base commit from which the current branch diverged. This can be done using the <code>git merge-base</code> command:</p>
+        <pre class="python"><code>base_commit = subprocess.check_output(
+            &quot;git merge-base HEAD $(git show-ref --verify --quiet refs/heads/main &amp;&amp; echo &#39;main&#39; || echo &#39;master&#39;)&quot;,
+            shell=True,
+            universal_newlines=True
+        ).strip()</code></pre>
+        <p>Once we have <code>base_commit</code>, then we use it in <code>git log --pretty</code> to retrieve and format the log:</p>
+        <pre class="python"><code>output = subprocess.check_output(
+            f&#39;git log --reverse --pretty=format:&quot;* %s%n%w(0,4,4)%b&quot; {base_commit}..HEAD&#39;,
+            shell=True,
+            universal_newlines=True
+        )</code></pre>
+        <p>This command also formats each commit as a list item, ensuring commit messages and bodies are properly indented.</p>
+        <h3 id="generating-the-title-and-description-with-openai">Generating the Title and Description with OpenAI</h3>
+        <p>The OpenAI <code>gpt-3.5-turbo</code> model is then used to generate a human-friendly title and description based on the git log. Using OpenAI API is a breeze with the official <code>openai</code> python module:</p>
+        <pre class="python"><code>response = openai.ChatCompletion.create(
+            model=&#39;gpt-3.5-turbo&#39;,
+            temperature=0.2,
+            n=1,
+            messages=[{&#39;role&#39;: &#39;user&#39;, &#39;content&#39;: prompt}]
+        )
+        output = response.choices[0].message.content.strip().strip(&#39;&quot;&#39;)</code></pre>
+        <p>Here, <code>prompt</code> is a string that instructs to generate a PR title or description from the git log. For instance, a <code>prompt</code> for the title might look like this:</p>
+        <pre class="python"><code>prompt = f&quot;You are an expert software engineer preparing the title of a PR. Summarize key changes into a short (max 100 chars) PR title from git log:\n\n{log}&quot;</code></pre>
+        <p>Here <code>log</code> is the git log obtained in the previous step.</p>
+        <h3 id="creating-the-pull-request">Creating the Pull Request</h3>
+        <p>Finally, we combine generated title and description to create a command for GitHub CLI to create the PR:</p>
+        <pre class="python"><code>command = f&#39;gh pr create --assignee @me --title {title} --body {body}&#39;</code></pre>
+        <p>Eventually this command is executed in the shell, creating the PR.</p>
+        <h2 id="conclusion">Conclusion</h2>
+        <p>By combining Python, OpenAI, and GitHub CLI, I now have a great tool to speed up PR creation. Once i’m ready to push changes to GitHub, all is needed is to run <code>,pr-create</code>.</p>
+        <p>After typing hundreds of PR titles and descriptions, this little trick feels like an incredible time saver.</p>
+        <p>Granted, titles and descriptions aren’t always on-point. Nonetheless, it’s much easier to quickly edit a few logic mistakes in text instead of starting from empty text field.</p>
+        <p>If you’d like to use or further explore this script, you can find the complete version <a href="https://github.com/argshook/dotfiles/blob/master/.argsdotfiles/bin/%2Cpr-create">here in my dotfiles repo</a>.</p>
+        <div class="article-meta">
+                    <div>Last updated: 2023-07-24</div>
+                    <a
+            href="https://github.com/argshook/zettelkasten/edit/main/create-pr-with-openai.md"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Edit this page on GitHub
+          </a>
+        </div>
+      </article>
     </main>
 
     <footer class="site-footer">

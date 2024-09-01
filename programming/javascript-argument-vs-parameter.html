@@ -42,42 +42,52 @@
       <article>
         <h1 id="title" class="article-title">Understanding Parameters and Arguments in JavaScript</h1>
         <p>In JavaScript, you’ll frequently hear terms like “parameters” and “arguments” when working with functions. While they may seem similar, they play distinct roles in your code. Let’s delve into these concepts.</p>
-<h3 id="what-are-parameters">What are Parameters?</h3>
-<p>Parameters are variables listed as part of the function definition. Think of them as placeholders or named variables that will hold the values you pass into the function. They are defined in the function declaration.</p>
-<p>Here’s an example:</p>
-<pre class="javascript"><code>function greet(name) {  // &#39;name&#39; is the parameter
-  console.log(&quot;Hello, &quot; + name);
-}</code></pre>
-<p>In the above function <code>greet</code>, <code>name</code> is a parameter. It’s essentially a label that you use within the function to refer to the value it will eventually hold.</p>
-<h3 id="what-are-arguments">What are Arguments?</h3>
-<p>Arguments are the actual values you pass into the function when you call it. These values are assigned to the function’s parameters, allowing the function to operate using them.</p>
-<p>Example:</p>
-<pre class="javascript"><code>greet(&quot;Alice&quot;); // &quot;Alice&quot; is the argument</code></pre>
-<p>In this example, when <code>greet</code> is called, <code>"Alice"</code> is the argument. This value is passed to the function and becomes the content of the <code>name</code> parameter.</p>
-<h3 id="visualization">Visualization</h3>
-<pre class="javascript"><code>function greet(name) {  // &#39;name&#39; is the parameter. ←
-  console.log(&quot;Hello, &quot; + name);
-}
+        <h3 id="what-are-parameters">What are Parameters?</h3>
+        <p>Parameters are variables listed as part of the function definition. Think of them as placeholders or named variables that will hold the values you pass into the function. They are defined in the function declaration.</p>
+        <p>Here’s an example:</p>
+        <pre class="javascript"><code>function greet(name) {  // &#39;name&#39; is the parameter
+          console.log(&quot;Hello, &quot; + name);
+        }</code></pre>
+        <p>In the above function <code>greet</code>, <code>name</code> is a parameter. It’s essentially a label that you use within the function to refer to the value it will eventually hold.</p>
+        <h3 id="what-are-arguments">What are Arguments?</h3>
+        <p>Arguments are the actual values you pass into the function when you call it. These values are assigned to the function’s parameters, allowing the function to operate using them.</p>
+        <p>Example:</p>
+        <pre class="javascript"><code>greet(&quot;Alice&quot;); // &quot;Alice&quot; is the argument</code></pre>
+        <p>In this example, when <code>greet</code> is called, <code>"Alice"</code> is the argument. This value is passed to the function and becomes the content of the <code>name</code> parameter.</p>
+        <h3 id="visualization">Visualization</h3>
+        <pre class="javascript"><code>function greet(name) {  // &#39;name&#39; is the parameter. ←
+          console.log(&quot;Hello, &quot; + name);
+        }
 
-greet(&quot;Alice&quot;);  // &quot;Alice&quot; is the argument. →</code></pre>
-<h3 id="key-points-to-remember">Key Points to Remember</h3>
-<ul>
-<li><strong>Definition</strong>:
-<ul>
-<li><strong>Parameter</strong>: Variable in the function declaration.</li>
-<li><strong>Argument</strong>: Actual value passed to the function.</li>
-</ul></li>
-<li><strong>Usage</strong>:
-<ul>
-<li>Parameters are used within functions to act on the values you pass.</li>
-<li>Arguments provide those values when the function is called.</li>
-</ul></li>
-</ul>
-<h3 id="conclusion">Conclusion</h3>
-<p>Understanding the distinction between parameters and arguments helps in writing clearer, more effective functions. Parameters act as your function’s input placeholders, while arguments are the real values you feed into those placeholders. Happy coding!</p>
-<hr />
-<p>This page was edited with <a href="https://dhub.dev">Dhub</a> - super simple documentation editor I’m working on. Give it a try for free!</p>         <p class="article-meta">Last updated: 2024-05-31</p>
-              </article>
+        greet(&quot;Alice&quot;);  // &quot;Alice&quot; is the argument. →</code></pre>
+        <h3 id="key-points-to-remember">Key Points to Remember</h3>
+        <ul>
+        <li><strong>Definition</strong>:
+        <ul>
+        <li><strong>Parameter</strong>: Variable in the function declaration.</li>
+        <li><strong>Argument</strong>: Actual value passed to the function.</li>
+        </ul></li>
+        <li><strong>Usage</strong>:
+        <ul>
+        <li>Parameters are used within functions to act on the values you pass.</li>
+        <li>Arguments provide those values when the function is called.</li>
+        </ul></li>
+        </ul>
+        <h3 id="conclusion">Conclusion</h3>
+        <p>Understanding the distinction between parameters and arguments helps in writing clearer, more effective functions. Parameters act as your function’s input placeholders, while arguments are the real values you feed into those placeholders. Happy coding!</p>
+        <hr />
+        <p>This page was edited with <a href="https://dhub.dev">Dhub</a> - super simple documentation editor I’m working on. Give it a try for free!</p>
+        <div class="article-meta">
+                    <div>Last updated: 2024-05-31</div>
+                    <a
+            href="https://github.com/argshook/zettelkasten/edit/main/programming/javascript-argument-vs-parameter.md"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Edit this page on GitHub
+          </a>
+        </div>
+      </article>
     </main>
 
     <footer class="site-footer">
