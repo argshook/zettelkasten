@@ -20,7 +20,7 @@
   --font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     "Helvetica Neue", Arial, sans-serif;
   --font-size-base: 16px;
-  --line-height-body: 1.8;
+  --line-height-body: 1.6;
   --line-height-heading: 1.3;
 
   /* Spacing */
@@ -216,6 +216,41 @@ main article {
   padding: 0 var(--spacing-unit);
 }
 
+figure {
+  margin: 0 auto calc(1.5 * var(--spacing-unit));
+  padding: 0;
+  text-align: center;
+}
+
+figure img {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  max-height: 100vh;
+  border-radius: 10px;
+  box-shadow: var(--box-shadow);
+}
+
+figure figcaption {
+  margin-top: calc(0.25 * var(--spacing-unit));
+  font-size: 0.8rem;
+  color: var(--color-text-secondary);
+}
+
+article hr {
+  margin: calc(2 * var(--spacing-unit)) 0;
+  border: none;
+  height: 30px;
+  background-image: radial-gradient(
+    circle,
+    var(--color-border) 0%,
+    transparent 100%
+  );
+  background-size: 100% 10px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 /* Article */
 .article-title {
   display: inline-block; /* for the gradient */
@@ -226,8 +261,10 @@ main article {
 
 .article-meta {
   color: var(--color-text-secondary);
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   margin-bottom: calc(1.5 * var(--spacing-unit));
+  text-align: right;
+  opacity: 0.8;
 }
 
 /* Code blocks */
@@ -290,6 +327,7 @@ pre code {
   cursor: pointer;
   transition: background-color var(--transition-speed);
   box-shadow: var(--box-shadow);
+  margin-left: auto;
 }
 
 .theme-toggle:hover {
@@ -318,9 +356,43 @@ pre code {
 
 .site-footer .container {
   display: flex;
-  flex-direction: column;
   align-items: center;
   gap: 2rem;
+}
+
+ul,
+ol {
+  margin-left: calc(0.5 * var(--spacing-unit));
+  padding: 0;
+}
+
+ul li,
+ol li {
+  line-height: var(--line-height-body);
+  font-size: 1rem;
+}
+
+ul li {
+  position: relative;
+  padding-left: 1rem;
+}
+
+ul li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: translateY(-0.2rem);
+  font-size: 1.2rem;
+  color: var(--color-link);
+}
+
+ul {
+  list-style: none;
+}
+
+ol {
+  list-style-type: decimal;
 }
 
 /* Responsive design - Mobile First */

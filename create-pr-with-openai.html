@@ -27,8 +27,7 @@
     <main id="main-content" class="container">
       <article>
         <h1 id="title" class="article-title">Turbocharging GitHub PR Creation with Python, OpenAI, and GitHub CLI</h1>
-                <p class="article-meta">Last updated: 2023-07-24</p>
-         <p>Developers who push numerous PRs daily can understand the taxing effort it takes to consistently pull-off comprehensive titles and descriptions. After writing great commit messages there should be no need to again write the PR description - it’s essentially the same thing in a different format.</p>
+        <p>Developers who push numerous PRs daily can understand the taxing effort it takes to consistently pull-off comprehensive titles and descriptions. After writing great commit messages there should be no need to again write the PR description - it’s essentially the same thing in a different format.</p>
 <p>I decided to automate the process of creating PRs. Not only pushing code with <code>gh pr create</code>, but also generating values for title and description.</p>
 <p>Using <code>python</code> as a glue to combine Git, GitHub CLI (<code>gh</code>), and OpenAI’s API, I ended up with a simple script.</p>
 <p>I chose to put it as <code>,pr-create</code> command. The comma (<code>,</code>) is just to make sure my script does not clash with some other command.</p>
@@ -76,8 +75,8 @@ output = response.choices[0].message.content.strip().strip(&#39;&quot;&#39;)</co
 <p>By combining Python, OpenAI, and GitHub CLI, I now have a great tool to speed up PR creation. Once i’m ready to push changes to GitHub, all is needed is to run <code>,pr-create</code>.</p>
 <p>After typing hundreds of PR titles and descriptions, this little trick feels like an incredible time saver.</p>
 <p>Granted, titles and descriptions aren’t always on-point. Nonetheless, it’s much easier to quickly edit a few logic mistakes in text instead of starting from empty text field.</p>
-<p>If you’d like to use or further explore this script, you can find the complete version <a href="https://github.com/argshook/dotfiles/blob/master/.argsdotfiles/bin/%2Cpr-create">here in my dotfiles repo</a>.</p>
-      </article>
+<p>If you’d like to use or further explore this script, you can find the complete version <a href="https://github.com/argshook/dotfiles/blob/master/.argsdotfiles/bin/%2Cpr-create">here in my dotfiles repo</a>.</p>         <p class="article-meta">Last updated: 2023-07-24</p>
+              </article>
     </main>
 
     <footer class="site-footer">
