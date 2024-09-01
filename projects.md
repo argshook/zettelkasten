@@ -2,6 +2,10 @@
 title: Projects
 ---
 
+Below is a non-complete list of projects i've worked on. Some are more serious, some are just for fun.
+
+There might be more on [github](https://github.com/argshook?tab=repositories).
+
 - <a href="https://dhub.dev/" target="_blank">
     dhub.dev
   </a> - WYSIWYG Editor for Docusaurus. The easiest way to edit Markdown and MDX
@@ -11,7 +15,7 @@ title: Projects
 - <a href="https://github.com/argshook/imgur-bigscreen" target="_blank">
     imgur bigscreen
   </a> - image viewer for content from [imgur.com](https://imgur.com), written in
-  elm <a href="https://github.com/argshook/imgur-bigscreen" target="_blank">source</a> <a href="https://arijus.net/imgur-bigscreen" target="_blank">
+  elm <a href="https://github.com/argshook/imgur-bigscreen" target="_blank">source</a> <a href="https://argshook.github.io/imgur-bigscreen" target="_blank">
       demo
     </a>
 - <a href="https://github.com/argshook/orodarius" target="_blank">
@@ -20,8 +24,8 @@ title: Projects
   1.5 
     <a href="https://github.com/argshook/orodarius" target="_blank">
       source
-    </a>{' '}
-    <a href="https://arijus.net/orodarius" target="_blank">
+    </a>
+    <a href="https://argshook.github.io/orodarius" target="_blank">
       demo
     </a>
 - <a href="https://github.com/argshook/redux-msg" target="_blank">
@@ -71,12 +75,10 @@ title: Projects
       target="_blank">
   source
   </a>
-- <a href="https://arijus.net" target="_blank">
-    old blog
-  </a> but really just a pet project to learn Elm.
-    <a href="https://github.com/argshook/argshook.github.io" target="_blank">
-      source
-    </a>
+- old blog (but really just an excuse to learn [Elm](https://elm-lang.org/)).
+  <a href="https://github.com/argshook/argshook.github.io" target="_blank">
+  source
+  </a>
 - <a href="https://github.com/argshook/zettelkasten" target="_blank">
     content of arij.us
   </a>
@@ -96,8 +98,8 @@ title: Projects
   </a> - yeah well i like that track 
     <a href="https://github.com/argshook/aesthetics" target="_blank">
       source
-    </a>{' '}
-    <a href="https://arijus.net/aesthetics" target="_blank">
+    </a>
+    <a href="https://argshook.github.io/aesthetics" target="_blank">
       demo (warning: background music)
     </a>
 - <a href="https://github.com/argshook/ng-attr" target="_blank">
@@ -107,11 +109,9 @@ title: Projects
     <a href="https://github.com/argshook/ng-attr" target="_blank">
       source
     </a>
-- <a href="https://arijus.net/gameOfLife/" target="_blank">
+- <a href="https://argshook.github.io/gameOfLife/" target="_blank">
     game of life
   </a> - toy written forever ago 
-    <a href="https://arijus.net/gameOfLife/" target="_blank">
+    <a href="https://github.com/argshook/gameOfLife" target="_blank">
       source
     </a>
-
-there might be more on [github](https://github.com/argshook?tab=repositories)

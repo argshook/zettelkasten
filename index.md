@@ -1,13 +1,15 @@
 ---
 title: Hello, World
-date-modified: 2024-04-11
+date-modified: 2024-08-30
 description: Personal digital garden with notes about programming, software and async work.
 ---
 
-Welcome to my digital garden!
+Welcome to my digital garden—an evolving space of thoughts, notes, and ideas.
 
-Check out the project I'm building: [https://dhub.dev/](https://dhub.dev/)
+Discover more about me and the purpose of this garden on the [About page](about.md).
 
-## Index
+Currently, I'm working on a project called Dhub. It's a collaborative WYSIWYG for Markdown and MDX files. Check it out here: [https://dhub.dev/](https://dhub.dev/)
+
+## Table of Contents
 
 ${toc}

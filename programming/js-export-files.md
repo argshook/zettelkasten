@@ -54,7 +54,7 @@ import { Button, Props as ButonProps } from 'components/ui/button'
 this way `index.ts` export file is not needed at all.
 
 to achieve `components/ui/input` path, we can leverage `package.json` `exports` field:
-```
+```json
 {
   "exports": {
     ".": "./dist/index.js",
