@@ -142,7 +142,9 @@ a:focus {
 
 /* Header */
 .site-header {
-  background-image: var(--gradient-header);
+  background: var(--gradient-header), url("header.light.webp");
+  background-size: cover;
+  background-blend-mode: hard-light;
   padding: calc(1.5 * var(--spacing-unit)) 0 var(--spacing-unit);
   box-shadow: var(--box-shadow);
 }
