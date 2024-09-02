@@ -10,6 +10,6 @@ Discover more about me and the purpose of this garden on the [About page](about.
 
 Currently, I'm working on a project called Dhub. It's a collaborative WYSIWYG for Markdown and MDX files. Check it out here: [https://dhub.dev/](https://dhub.dev/)
 
-## Table of Contents
+## All notes
 
 ${toc}
