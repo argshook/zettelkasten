@@ -3,16 +3,6 @@ title: pacman
 date-modified: 2024-09-03
 ---
 
-```
- _ __   __ _  ___ _ __ ___   __ _ _ __
-| '_ \ / _` |/ __| '_ ` _ \ / _` | '_ \
-| |_) | (_| | (__| | | | | | (_| | | | |
-| .__/ \__,_|\___|_| |_| |_|\__,_|_| |_|
-|_|
-```
-
-# pacman
-
 ## check how many cached packages are available
 
 ```shell
