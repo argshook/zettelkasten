@@ -344,6 +344,7 @@ pre code {
   border-radius: calc(var(--border-radius) / 1.5);
   display: block;
   opacity: 0.7;
+  white-space: preserve-breaks;
 }
 
 /* Theme toggle */
