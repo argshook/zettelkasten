@@ -3,68 +3,43 @@ title: pacman
 date-modified: 2024-09-03
 ---
 
-## check how many cached packages are available
+## Checking Cache
 
 ```shell
+# Count cached packages
 sudo ls /var/cache/pacman/pkg/ | wc -l
-```
 
-## check total disk space used
-
-```shell
+# Check disk space used
 du -sh /var/cache/pacman/pkg/
 ```
 
-## To clean all packages, except the 3 most recent versions:
+## Cleaning Cache
 
 ```shell
+# Remove all but 3 most recent versions
 sudo paccache -r
-```
 
-Paccache removed old and/or uninstalled packages from the cache.
-check how many packages are left.
-
-```shell
-sudo ls /var/cache/pacman/pkg/ | wc -l
-```
-
----
-
-want to remove more packages? `paccache` allows to decide how many recent versions to keep.
-command if you want to keep only one most recent version:
-
-```shell
+# Keep only 1 most recent version
 sudo paccache -rk 1
-```
 
-`k` - keep number of each package in the cache.
-
-## To remove all cached versions of uninstalled packages:
-
-```shell
+# Remove all cached versions of uninstalled packages
 sudo paccache -ruk0
-```
 
-`u` - the uninstalled packages.
-
-## remove all uninstalled packages:
-
-```shell
+# Remove all uninstalled packages
 sudo pacman -Sc
-```
 
-## To completely remove all packages (Whether they are installed or uninstalled) from the cache:
-
-```shell
+# Remove all packages from cache (use with caution)
 sudo pacman -Scc
 ```
 
-be careful using this command. There is no way to retrieve the cached packages once they are deleted.
-
-## Mirrorlist
+## Mirrorlist Management
 
 ```shell
+# Edit mirrorlist
 visudo /etc/pacman.d/mirrorlist
+
+# Generate ranked mirror list
+reflector [options]
 ```
 
-Generate a ranked mirror list with `reflector`
+Note: Always verify changes before applying. Backup important files.
