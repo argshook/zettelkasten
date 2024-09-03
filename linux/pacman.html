@@ -42,29 +42,34 @@
     <main id="main-content" class="container">
       <article>
         <h1 id="title" class="article-title">pacman</h1>
-        <h2 id="check-how-many-cached-packages-are-available">check how many cached packages are available</h2>
-        <pre class="shell"><code>sudo ls /var/cache/pacman/pkg/ | wc -l</code></pre>
-        <h2 id="check-total-disk-space-used">check total disk space used</h2>
-        <pre class="shell"><code>du -sh /var/cache/pacman/pkg/</code></pre>
-        <h2 id="to-clean-all-packages-except-the-3-most-recent-versions">To clean all packages, except the 3 most recent versions:</h2>
-        <pre class="shell"><code>sudo paccache -r</code></pre>
-        <p>Paccache removed old and/or uninstalled packages from the cache. check how many packages are left.</p>
-        <pre class="shell"><code>sudo ls /var/cache/pacman/pkg/ | wc -l</code></pre>
-        <hr />
-        <p>want to remove more packages? <code>paccache</code> allows to decide how many recent versions to keep. command if you want to keep only one most recent version:</p>
-        <pre class="shell"><code>sudo paccache -rk 1</code></pre>
-        <p><code>k</code> - keep number of each package in the cache.</p>
-        <h2 id="to-remove-all-cached-versions-of-uninstalled-packages">To remove all cached versions of uninstalled packages:</h2>
-        <pre class="shell"><code>sudo paccache -ruk0</code></pre>
-        <p><code>u</code> - the uninstalled packages.</p>
-        <h2 id="remove-all-uninstalled-packages">remove all uninstalled packages:</h2>
-        <pre class="shell"><code>sudo pacman -Sc</code></pre>
-        <h2 id="to-completely-remove-all-packages-whether-they-are-installed-or-uninstalled-from-the-cache">To completely remove all packages (Whether they are installed or uninstalled) from the cache:</h2>
-        <pre class="shell"><code>sudo pacman -Scc</code></pre>
-        <p>be careful using this command. There is no way to retrieve the cached packages once they are deleted.</p>
-        <h2 id="mirrorlist">Mirrorlist</h2>
-        <pre class="shell"><code>visudo /etc/pacman.d/mirrorlist</code></pre>
-        <p>Generate a ranked mirror list with <code>reflector</code></p>
+        <h2 id="checking-cache">Checking Cache</h2>
+        <pre class="shell"><code># Count cached packages
+        sudo ls /var/cache/pacman/pkg/ | wc -l
+
+        # Check disk space used
+        du -sh /var/cache/pacman/pkg/</code></pre>
+        <h2 id="cleaning-cache">Cleaning Cache</h2>
+        <pre class="shell"><code># Remove all but 3 most recent versions
+        sudo paccache -r
+
+        # Keep only 1 most recent version
+        sudo paccache -rk 1
+
+        # Remove all cached versions of uninstalled packages
+        sudo paccache -ruk0
+
+        # Remove all uninstalled packages
+        sudo pacman -Sc
+
+        # Remove all packages from cache (use with caution)
+        sudo pacman -Scc</code></pre>
+        <h2 id="mirrorlist-management">Mirrorlist Management</h2>
+        <pre class="shell"><code># Edit mirrorlist
+        visudo /etc/pacman.d/mirrorlist
+
+        # Generate ranked mirror list
+        reflector [options]</code></pre>
+        <p>Note: Always verify changes before applying. Backup important files.</p>
         <div class="article-meta">
                     <div>Last updated: 2024-09-03</div>
                     <a
