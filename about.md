@@ -21,7 +21,17 @@ Wanted to share some of them, but there were problems:
 
 These few points were enough to prevent me from sharing.
 
-What i wanted is to have ability to simply hit `save` and have the note published. No other actions at all, hit save and be done while notes automatically become available online.
+What i wanted is to have ability to simply hit "save" and have the note published. No other actions at all, hit save and be done while notes automatically become available online.
+
+Turns out just saving is a bit too often, so in the end i settled on a "publish" command. [Here's the source of it](https://github.com/argshook/dotfiles/blob/main/.argsdotfiles/vim/vim-zettel-public.lua)
+
+After running `:Publish` in my editor, the note is formatted, saved,
+committed, and pushed to a public Github repository, where a Github action notifies another (private) repository to run the build and deploy the note to the web.
+
+For me it's instantaneous (just `:Publish` and `enter`) and the whole
+build cycle takes about a minute. It takes longer for the cache to
+update and the note to be available online. That's the CI/CD i always
+dreamt of!
 
 This is that page. A random collection of personal notes with links between them. It's not a blog, there are no posts or a timeline.
 
