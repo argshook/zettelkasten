@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hello, World | arij.us</title>
+    <title>pacman | arij.us</title>
     <link rel="stylesheet" href="/statics/style.css" />
     <link rel="icon" href="/statics/favicon.png" type="image/x-icon" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -12,7 +12,7 @@
       href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Rambla:ital,wght@0,400;0,700;1,400;1,700&display=swap"
       rel="stylesheet"
     />
-    <meta name="description" content="Personal digital garden with notes about programming, software and async work." />
+    <meta name="description" content="" />
   </head>
   <body class="open-sans-regular">
     <header class="site-header">
@@ -41,40 +41,40 @@
 
     <main id="main-content" class="container">
       <article>
-        <h1 id="title" class="article-title">Hello, World</h1>
-        <p>Welcome to my digital garden—an evolving space of thoughts, notes, and ideas.</p>
-        <p>Discover more about me and the purpose of this garden on the <a href="about.html">About page</a>.</p>
-        <p>Currently, I’m working on a project called Dhub. It’s a collaborative WYSIWYG for Markdown and MDX files. Check it out here: <a href="https://dhub.dev/">https://dhub.dev/</a></p>
-        <h2 id="all-notes">All notes</h2>
-        <div class="toc">
-        <ul>
-        <li><a href="about.html">About</a></li>
-        <li><a href="bookmarks.html">Bookmarks</a></li>
-        <li><a href="create-pr-with-openai.html">Create pr with openai</a></li>
-        <li>Linux
-        <ul>
-        <li><a href="linux/docker.html">Docker</a></li>
-        <li><a href="linux/git.html">Git</a></li>
-        <li><a href="linux/java.html">Java</a></li>
-        <li><a href="linux/pacman.html">Pacman</a></li>
-        <li><a href="linux/swap.html">Swap</a></li>
-        <li><a href="linux/tig.html">Tig</a></li>
-        <li><a href="linux/tmux.html">Tmux</a></li>
-        <li><a href="linux/vim.html">Vim</a></li>
-        </ul></li>
-        <li>Programming
-        <ul>
-        <li><a href="programming/javascript-argument-vs-parameter.html">Javascript argument vs parameter</a></li>
-        <li><a href="programming/js-export-files.html">Js export files</a></li>
-        </ul></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="sync-vs-async.html">Sync vs async</a></li>
-        </ul>
-        </div>
+        <h1 id="title" class="article-title">pacman</h1>
+        <pre><code> _ __   __ _  ___ _ __ ___   __ _ _ __
+        | &#39;_ \ / _` |/ __| &#39;_ ` _ \ / _` | &#39;_ \
+        | |_) | (_| | (__| | | | | | (_| | | | |
+        | .__/ \__,_|\___|_| |_| |_|\__,_|_| |_|
+        |_|</code></pre>
+        <h1 id="pacman">pacman</h1>
+        <h2 id="check-how-many-cached-packages-are-available">check how many cached packages are available</h2>
+        <pre class="shell"><code>sudo ls /var/cache/pacman/pkg/ | wc -l</code></pre>
+        <h2 id="check-total-disk-space-used">check total disk space used</h2>
+        <pre class="shell"><code>du -sh /var/cache/pacman/pkg/</code></pre>
+        <h2 id="to-clean-all-packages-except-the-3-most-recent-versions">To clean all packages, except the 3 most recent versions:</h2>
+        <pre class="shell"><code>sudo paccache -r</code></pre>
+        <p>Paccache removed old and/or uninstalled packages from the cache. check how many packages are left.</p>
+        <pre class="shell"><code>sudo ls /var/cache/pacman/pkg/ | wc -l</code></pre>
+        <hr />
+        <p>want to remove more packages? <code>paccache</code> allows to decide how many recent versions to keep. command if you want to keep only one most recent version:</p>
+        <pre class="shell"><code>sudo paccache -rk 1</code></pre>
+        <p><code>k</code> - keep number of each package in the cache.</p>
+        <h2 id="to-remove-all-cached-versions-of-uninstalled-packages">To remove all cached versions of uninstalled packages:</h2>
+        <pre class="shell"><code>sudo paccache -ruk0</code></pre>
+        <p><code>u</code> - the uninstalled packages.</p>
+        <h2 id="remove-all-uninstalled-packages">remove all uninstalled packages:</h2>
+        <pre class="shell"><code>sudo pacman -Sc</code></pre>
+        <h2 id="to-completely-remove-all-packages-whether-they-are-installed-or-uninstalled-from-the-cache">To completely remove all packages (Whether they are installed or uninstalled) from the cache:</h2>
+        <pre class="shell"><code>sudo pacman -Scc</code></pre>
+        <p>be careful using this command. There is no way to retrieve the cached packages once they are deleted.</p>
+        <h2 id="mirrorlist">Mirrorlist</h2>
+        <pre class="shell"><code>visudo /etc/pacman.d/mirrorlist</code></pre>
+        <p>Generate a ranked mirror list with <code>reflector</code></p>
         <div class="article-meta">
-                    <div>Last updated: 2024-09-01</div>
+                    <div>Last updated: 2024-09-03</div>
                     <a
-            href="https://github.com/argshook/zettelkasten/edit/main/index.md"
+            href="https://github.com/argshook/zettelkasten/edit/main/linux/pacman.md"
             target="_blank"
             rel="noopener noreferrer"
           >
