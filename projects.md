@@ -12,6 +12,10 @@ There might be more on [github](https://github.com/argshook?tab=repositories).
   files online, without writing code. <a href="https://github.com/dhub-dev" target="_blank">
       github
     </a>
+- <a href="https://github.com/argshook/dotfiles" target="_blank">
+      dotfiles
+    </a> - probably most often updated "project" of mine 😛. Wow, it's already a decade of
+  shell scripts, vim configs, and other stuff!
 - <a href="https://github.com/argshook/imgur-bigscreen" target="_blank">
     imgur bigscreen
   </a> - image viewer for content from [imgur.com](https://imgur.com), written in
