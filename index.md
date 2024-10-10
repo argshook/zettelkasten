@@ -8,7 +8,7 @@ Welcome to my digital garden—an evolving space of thoughts, notes, and ideas.
 
 Discover more about me and the purpose of this garden on the [About page](about.md).
 
-Currently, I'm working on a text-based AI game called [https://lairuna.com](Lairuna).
+Currently, I'm working on a text-based AI game called [Lairuna](https://lairuna.com).
 
 Earlier helped building [https://dhub.dev](Dhub) - a collaborative WYSIWYG for `.md`/`.mdx` files.
 
