@@ -16,11 +16,11 @@ Before that worked on [QuestDB](https://questdb.io) - the fastest open source ti
 
 Before QuestDB spent many years at [Wix](https://wix.com) working on products, component libraries, DevEx tools, CI systems, mentoring and more things I can't remember anymore 😅
 
----
-
 I'm often 💩posting on X [@argshook](https://twitter.com/argshook).
 
 Thanks for hanging out!
+
+---
 
 ## All notes
 
