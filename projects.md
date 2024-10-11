@@ -12,7 +12,7 @@ There might be more on [github](https://github.com/argshook?tab=repositories).
   each game.
 - <a href="https://screenshot-online.deno.dev" target="_blank">
     Screenshot Online
-      </a> - Little tool to take and edit screenshots online. Built with Deno + Fresh. Unpolished, it "just works" with the 5 features I needed.
+      </a> - Little tool to take and edit screenshots online. Built with Deno + Fresh. Unpolished, it "just works" with not more than 5 features.
   each game.
 - <a href="https://dhub.dev/" target="_blank">
     dhub.dev
