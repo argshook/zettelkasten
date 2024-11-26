@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Git | arij.us</title>
+    <title> | arij.us</title>
     <link rel="stylesheet" href="/statics/style.css" />
     <link rel="icon" href="/statics/favicon.png" type="image/x-icon" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -41,13 +41,148 @@
 
     <main id="main-content" class="container">
       <article>
-        <h1 id="title" class="article-title">Git</h1>
-        <h2 id="list-authors-and-the-number-of-commits">List authors and the number of commits</h2>
-        <pre class="shell"><code>git shortlog --summary --email --numbered</code></pre>
-        <h2 id="list-authors-in-all-branches">List authors in all branches</h2>
-        <pre class="shell"><code>git shortlog -sne --all</code></pre>
+        <h1 id="title" class="article-title"></h1>
+        <h1 id="git">Git</h1>
+        <p>http://sethrobertson.github.io/GitFixUm/fixup.html</p>
+        <h1 id="ignore-file">ignore file</h1>
+        <p>to keep file in history but dont track changes:</p>
+        <pre><code>git update-index --assume-unchanged FILE_NAME</code></pre>
+        <p>and if you want to track the changes again use this command:</p>
+        <pre><code>git update-index --no-assume-unchanged FILE_NAME</code></pre>
+        <h1 id="eslint-pre-commit-hook">eslint pre-commit hook</h1>
+        <p>this is for <code>yoshi</code>:</p>
+        <pre><code>echo &#39;#!/bin/sh\nyoshi lint&#39; &gt; .git/hooks/pre-push &amp;&amp; chmod u+x .git/hooks/pre-push</code></pre>
+        <h1 id="checkout-remote-pr-locally">checkout remote PR locally</h1>
+        <p>Works on github</p>
+        <pre><code>git fetch origin pull/ID/head:BRANCHNAME</code></pre>
+        <h1 id="remove-last-commit">remove last commit</h1>
+        <pre><code>git reset --hard HEAD^</code></pre>
+        <h1 id="remove-multiple-commits-from-top">remove multiple commits from top</h1>
+        <pre><code>git reset --hard HEAD~2</code></pre>
+        <p>where <code>2</code> is the number of commits to remove</p>
+        <h1 id="rename-your-local-branch.">Rename your local branch.</h1>
+        <p>If you are on the branch you want to rename:</p>
+        <pre><code>git branch -m new-name</code></pre>
+        <p>If you are on a different branch:</p>
+        <pre><code>git branch -m old-name new-name</code></pre>
+        <h1 id="delete-the-old-name-remote-branch-and-push-the-new-name-local-branch.">Delete the old-name remote branch and push the new-name local branch.</h1>
+        <pre><code>git push origin old-name new-name</code></pre>
+        <h1 id="reset-the-upstream-branch-for-the-new-name-local-branch.">Reset the upstream branch for the new-name local branch.</h1>
+        <p>Switch to the branch and then:</p>
+        <pre><code>git push origin -u new-name</code></pre>
+        <h6 id="github">Github</h6>
+        <p>http://patorjk.com/software/taag/</p>
+        <p>use <code>Stick Letters</code></p>
+        <p>if it doesn’t work, try:</p>
+        <ul>
+        <li>Three Point</li>
+        <li>Rectangles</li>
+        <li>Calvin S</li>
+        <li>Contessa</li>
+        <li>Cybermedium</li>
+        <li>JS Stick Letters</li>
+        </ul>
+        <p>this from github</p>
+        <p>d6695-d0acc bd5c7-dbd61 68376-a9cfe 88f22-00ab8 1b15e-c4a39 eae11-653b4 82bc3-132bb d18df-5d2d2 90ee9-45ddb f6a3d-2c8b2 ad470-d55b5 40597-0ab3a 62834-71669 e9224-a1af6 59585-e651a 6d1da-d23ef</p>
+        <p>this from digitalocean</p>
+        <p>ca5c2da3 057071e4 ecdcaaa6 ed2e674e ba66b01b 2afc6b2c ed59eebe 87d225c7 22e98bb2 d192866f c38b9059 fdc89446</p>
+        <hr />
+        <h1 id="code-review-in-command-line">code review in command line</h1>
+        <h2 id="setups-requirements">Setups &amp; Requirements</h2>
+        <p>need <code>hub</code></p>
+        <p>~/.gitconfig:</p>
+        <pre><code>[alias]
+          # list files which have changed since REVIEW_BASE
+          files = !git diff --name-only $(git merge-base HEAD \&quot;$REVIEW_BASE\&quot;)
+
+          # Same as above, but with a diff stat instead of just names
+          # (better for interactive use)
+          stat = !git diff --stat $(git merge-base HEAD \&quot;$REVIEW_BASE\&quot;)
+
+          depgraph = !git madge image --webpack-config webpack.config.js --basedir . --style solarized-dark src
+        </code></pre>
+        <p><code>npm i -g madge</code></p>
+        <h2 id="flow">Flow</h2>
+        <p><code>hub checkout pr 4079</code> <code>git stat</code></p>
+        <h1 id="patchapply">patch/apply</h1>
+        <ol type="1">
+        <li><p>Generate the patch: <code>diff old new &gt; changes.patch</code> or <code>git diff &gt; some-changes.patch</code></p></li>
+        <li><p>Apply the diff: <code>git apply /path/to/some-changes.patch</code></p></li>
+        </ol>
+        <p>And that’s it! The changes are now in your working copy and ready to be staged/commit/pushed :)</p>
+        <h1 id="create-patch-from-multiple-commits">create patch from multiple commits</h1>
+        <pre><code>git format-patch cc1dde0dd^..6de6d4b06 --stdout &gt; foo.patch</code></pre>
+        <p>then to apply it</p>
+        <pre><code>git am foo.patch</code></pre>
+        <h1 id="last-three-commits">last three commits</h1>
+        <pre><code>git format-patch -3 --stdout &gt; multi_commit.patch</code></pre>
+        <h1 id="all-commits-that-are-in-your-branch-and-not-in-master-into-a-single-patch-file-multi_commit.patch">all commits that are in your branch and not in master into a single patch file multi_commit.patch</h1>
+        <pre><code>git format-patch --signoff master --stdout &gt; multi_commit.patch</code></pre>
+        <h1 id="create-patches-in-the-folder-outputdirectory-for-all-commits-that-are-in-your-branch-and-not-in-master">create patches in the folder ~/output/directory/ for all commits that are in your branch and not in master</h1>
+        <pre><code>git format-patch -o ~/output/directory/ --signoff master</code></pre>
+        <h1 id="list-only-untracked-filesdirectories">list only untracked files/directories</h1>
+        <p><code>git ls-files --exclude-standard --others</code></p>
+        <p>for use with <code>xargs</code></p>
+        <p><code>git ls-files -z -o --exclude-standard | xargs -0 git add</code></p>
+        <h1 id="delete-untracked-files">delete untracked files</h1>
+        <p>:remove:</p>
+        <pre><code>git ls-files -z -o --exclude-standard | xargs -0 rm</code></pre>
+        <h1 id="checkout-at-specific-date">checkout at specific date</h1>
+        <pre><code>git checkout &quot;`git rev-list master  -n 1 --first-parent --before=2008-03-02`&quot;</code></pre>
+        <h1 id="unshallow-a-clone">unshallow a clone</h1>
+        <p>The below command will convert the shallow clone to regular one</p>
+        <pre><code>git fetch --unshallow</code></pre>
+        <p>Then, to get access to all the branches on origin</p>
+        <pre><code>git config remote.origin.fetch &quot;+refs/heads/*:refs/remotes/origin/*&quot;
+        git fetch origin</code></pre>
+        <h1 id="reset-diverged-master-to-origin">reset diverged master to origin</h1>
+        <pre><code>git reset --hard origin/master</code></pre>
+        <h1 id="revert-last-n-commits">revert last n commits</h1>
+        <p>from https://stackoverflow.com/a/43081965/10622119</p>
+        <p><code>git revert --no-commit HEAD~3..</code> This command reverts last 3 commits with only one commit.</p>
+        <p>Also doesn’t rewrite history.</p>
+        <p>The <code>..</code> helps create a range. Meaning <code>HEAD~3..</code> is the same as <code>HEAD~3..HEAD</code></p>
+        <h1 id="rebase">rebase</h1>
+        <p>:squash:</p>
+        <p><code>git rebase -i &lt;after-this-commit&gt;</code> replace “pick” on the second and subsequent commits with “squash” or “fixup”, as described in the manual.</p>
+        <h1 id="git-diff-show-only-filenames">git diff show only filenames</h1>
+        <p><code>--name-only</code></p>
+        <h1 id="visualize-git-commits">visualize git commits</h1>
+        <p>use <code>gource</code></p>
+        <pre><code>gource . -1920x1080 -s 0.01 --max-user-speed 300 --dir-name-depth 1 --highlight-users --disable-input --bloom-intensity 0.1 --bloom-multiplier 0.1 --filename-time 2 --hide filenames --date-format &quot;%b %d %Y&quot; -o - | ffmpeg -y -r 60 -f image2pipe -vcodec ppm -i - -vcodec libx264 -preset ultrafast -pix_fmt yuv420p -crf 1 -threads 0 -bf 0 gource.mp4</code></pre>
+        <h1 id="git-diff-show-lines-addedremoved">git diff: show lines added/removed</h1>
+        <p>Use <code>--numstat</code>:</p>
+        <pre class="sh"><code>git diff --numstat</code></pre>
+        <h1 id="show-files-that-were-changed-in-the-last-2-days">show files that were changed in the last 2 days</h1>
+        <pre><code>git log --pretty=format: --name-only --since=&quot;2 days ago&quot;</code></pre>
+        <h1 id="search-for-commit-content">search for commit content</h1>
+        <p>To search for commit content (i.e., actual lines of source, as opposed to commit messages and the like), you need to do:</p>
+        <pre><code>git grep &lt;regexp&gt; $(git rev-list --all)</code></pre>
+        <pre><code>git rev-list --all | xargs git grep &lt;expression&gt;</code></pre>
+        <p>this will work if you run into an “Argument list too long” error.</p>
+        <h1 id="fetch-and-checkout-remote-branch">fetch and checkout remote branch</h1>
+        <pre><code>git fetch &lt;remote-repository&gt;</code></pre>
+        <p>This fetch command will fetch all remote branches and also store all references/objects. Then, checkout to the branch, giving you a local working copy.</p>
+        <pre><code>git checkout -b &lt;local-branch&gt; &lt;remote-repository&gt;/&lt;remote-branch&gt;</code></pre>
+        <p>or</p>
+        <pre><code>git branch &lt;local-branch&gt; &lt;remote-repository&gt;/&lt;remote-branch&gt;</code></pre>
+        <h1 id="debug-.gitignore">debug <code>.gitignore</code></h1>
+        <p>Use <code>git check-ignore</code>:</p>
+        <pre class="bash"><code>git check-ignore [&lt;options&gt;] &lt;pathname&gt;...
+        git check-ignore [&lt;options&gt;] --stdin</code></pre>
+        <h1 id="extract-folder-with-history">extract folder with history</h1>
+        <p>You’ll need <a href="https://github.com/newren/git-filter-repo">git-filter-repo</a> for this.</p>
+        <p>On arch it’s just <code>yay git-filter-repo</code></p>
+        <pre><code>git filter-repo --path folder --to-subdirectory-filter new-folder</code></pre>
+        <p>This will:</p>
+        <ol type="1">
+        <li>Remove everything that is not in <code>folder</code></li>
+        <li>Move everything that is in <code>folder</code> to <code>new-folder</code></li>
+        <li>Keep git history of files in <code>folder</code></li>
+        </ol>
+        <h1 id="find-first-git-commit">find first git commit</h1>
+        <pre><code>git rev-list --max-parents=0 HEAD</code></pre>
         <div class="article-meta">
-                    <div>Last updated: 2023-08-30</div>
                     <a
             href="https://github.com/argshook/zettelkasten/edit/main/linux/git.md"
             target="_blank"
