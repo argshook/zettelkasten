@@ -6,6 +6,11 @@ Below is a non-complete list of projects i've worked on. Some are more serious, 
 
 There might be more on [github](https://github.com/argshook?tab=repositories).
 
+- <a href="https://septima.lt/" target="_blank">
+      septima.lt
+        </a> - A platform for personal fitness trainers and their clients
+  to communicate and track workouts. Trainers can create and share
+  workouts, clients submit workouts, feedback, book sessions and more.
 - <a href="https://lairuna.com/" target="_blank">
     lairuna.com
       </a> - AI-driven adventure game with completely unique playthroughs
